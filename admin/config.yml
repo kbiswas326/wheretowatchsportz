@@ -1,0 +1,61 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/wheretowatchsportz
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+
+  - name: "posts"
+    label: "Posts / Guides"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Sport", name: "sport", widget: "select", options: ["Cricket", "Football", "Formula 1", "Tennis", "Basketball", "Kabaddi", "General"] }
+      - { label: "Cover Image", name: "image", widget: "image", required: false }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Published", name: "published", widget: "boolean", default: true }
+
+  - name: "sports"
+    label: "Sports Pages"
+    folder: "content/sports"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Sport Name", name: "title", widget: "string" }
+      - { label: "Emoji", name: "emoji", widget: "string" }
+      - { label: "Tag Line", name: "tagline", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - label: "Streaming Platforms"
+        name: "platforms"
+        widget: "list"
+        fields:
+          - { label: "Platform Name", name: "name", widget: "string" }
+          - { label: "Region", name: "region", widget: "string" }
+          - { label: "Price", name: "price", widget: "string" }
+          - { label: "Is Free?", name: "free", widget: "boolean", default: false }
+          - { label: "What it covers", name: "coverage", widget: "text" }
+          - { label: "URL", name: "url", widget: "string" }
+
+  - name: "platforms"
+    label: "Platform Directory"
+    folder: "content/platforms"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Platform Name", name: "title", widget: "string" }
+      - { label: "Region", name: "region", widget: "select", options: ["India", "Global", "UK", "USA", "Australia", "Europe"] }
+      - { label: "Price", name: "price", widget: "string" }
+      - { label: "Free Tier Available", name: "free", widget: "boolean", default: false }
+      - { label: "Website URL", name: "url", widget: "string" }
+      - label: "Sports Covered"
+        name: "sports"
+        widget: "list"
+        field: { label: "Sport", name: "sport", widget: "string" }
+      - { label: "Notes", name: "notes", widget: "text", required: false }
