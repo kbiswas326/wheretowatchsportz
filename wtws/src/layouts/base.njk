@@ -1,0 +1,73 @@
+---
+permalink: false
+---
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ title or "WhereToWatchSportz" }}</title>
+
+  <meta name="description" content="{{ description or 'Find where to watch sports worldwide' }}">
+
+  <meta name="robots" content="index,follow">
+
+  <link rel="canonical" href="{{ canonicalUrl or site.url }}{{ page.url }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title or 'WhereToWatchSportz' }}">
+  <meta property="og:description" content="{{ description or 'Find where to watch sports worldwide' }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title or 'WhereToWatchSportz' }}">
+  <meta name="twitter:description" content="{{ description or 'Find where to watch sports worldwide' }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"WhereToWatchSportz",
+    "url":"{{ site.url }}"
+  }
+  </script>
+
+</head>
+
+<body>
+
+<nav class="nav">
+  <a href="/" class="nav-logo">WTWS<span class="dot">.</span></a>
+
+  <div class="nav-links">
+    <a href="/sport/cricket/">Cricket</a>
+    <a href="/sport/football/">Football</a>
+    <a href="/sport/f1/">F1</a>
+    <a href="/sport/tennis/">Tennis</a>
+    <a href="/platform/">Platforms</a>
+    <a href="/guide/">Guides</a>
+  </div>
+</nav>
+
+{{ content | safe }}
+
+<footer class="footer">
+  <div class="footer-bottom">
+    <p>© 2026 WhereToWatchSportz</p>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+
+</body>
+</html>

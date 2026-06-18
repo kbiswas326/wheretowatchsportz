@@ -1,0 +1,234 @@
+---
+layout: ../layouts/base.njk
+
+pagination:
+  data: countries
+  size: 1
+  alias: pageData
+
+permalink: "sport/{{ pageData.tournament.sport }}/{{ pageData.tournament.id }}/{{ pageData.countryCode }}/index.html"
+
+eleventyComputed:
+  title: "Where to Watch {{ pageData.tournament.name }} {{ pageData.tournament.season }} in {{ pageData.countryCode | capitalize }}"
+  description: "Watch {{ pageData.tournament.name }} live in {{ pageData.countryCode | capitalize }}. Find streaming services, TV channels and broadcast information."
+---
+
+{% set platformData = platformLookup[pageData.platform] %}
+{% set imagePath = "/images/tournaments/" + pageData.tournament.id + "-" + pageData.tournament.season + ".jpg" %}
+
+<header class="sport-hero">
+  <div class="sport-hero-inner">
+
+    <nav class="breadcrumbs">
+
+      <a href="/">Home</a>
+
+      <span>›</span>
+
+      <a href="/sport/{{ pageData.tournament.sport }}/">
+        {{ pageData.tournament.sport | capitalize }}
+      </a>
+
+      <span>›</span>
+
+      <a href="/sport/{{ pageData.tournament.sport }}/{{ pageData.tournament.id }}/">
+        {{ pageData.tournament.name }}
+      </a>
+
+      <span>›</span>
+
+      <span>
+        {{ pageData.countryCode | capitalize }}
+      </span>
+
+    </nav>
+
+    <div class="hero-eyebrow">
+      WHERE TO WATCH
+    </div>
+
+    <h1 class="sport-hero-title">
+      {{ pageData.tournament.name }}
+
+      {% if pageData.tournament.season %}
+        {{ pageData.tournament.season }}
+      {% endif %}
+
+      in
+
+      {{ pageData.countryCode | capitalize }}
+    </h1>
+
+    <p class="sport-hero-sub">
+      Official streaming, TV broadcast and viewing information.
+    </p>
+
+  </div>
+</header>
+
+{% if pageData.tournament.image %}
+<section class="feature-image-section">
+
+  <img
+    src="{{ pageData.tournament.image }}"
+    alt="{{ pageData.tournament.name }}"
+    class="feature-image"
+  >
+
+</section>
+{% endif %}
+
+<section class="feature-image-section">
+
+  <div class="feature-image-frame">
+
+    <img
+      src="{{ imagePath }}"
+      alt="{{ pageData.tournament.name }} {{ pageData.tournament.season }}"
+      class="feature-image"
+    >
+
+  </div>
+
+</section>
+
+<main class="sport-main">
+
+<section class="stream-section">
+
+<div class="section-label">
+Streaming Information
+</div>
+
+<p>
+Fans in {{ pageData.countryCode | capitalize }} can watch
+<strong>{{ pageData.tournament.name }}</strong>
+live through
+
+<a href="/platform/{{ platformData.id }}/">
+  {{ platformData.name }}
+</a>.
+
+{% if pageData.tv %}
+Coverage is also available on
+<strong>{{ pageData.tv }}</strong>.
+{% endif %}
+</p>
+
+</section>
+
+<section class="stream-section">
+
+<div class="section-label">
+About This Tournament
+</div>
+
+<p>
+{{ pageData.tournament.description }}
+</p>
+
+<p>
+This guide helps viewers in {{ pageData.countryCode | capitalize }}
+find official streaming options, television broadcasters and viewing
+information for {{ pageData.tournament.name }}.
+</p>
+
+</section>
+
+<section class="stream-section">
+
+<div class="section-label">
+Platform Details
+</div>
+
+<p>
+Streaming Service:
+<a href="/platform/{{ platformData.id }}/">
+  {{ platformData.name }}
+</a>
+</p>
+
+{% if pageData.tv %}
+<p>
+TV Channel:
+{{ pageData.tv }}
+</p>
+{% endif %}
+
+</section>
+
+<section class="stream-section">
+
+<div class="section-label">
+Related Pages
+</div>
+
+<ul>
+
+<li>
+<a href="/sport/{{ pageData.tournament.sport }}/">
+All {{ pageData.tournament.sport | capitalize }} Guides
+</a>
+</li>
+
+<li>
+<a href="/sport/{{ pageData.tournament.sport }}/{{ pageData.tournament.id }}/">
+{{ pageData.tournament.name }} Overview
+</a>
+</li>
+
+<li>
+<a href="/platform/{{ platformData.id }}/">
+{{ platformData.name }} Platform Guide
+</a>
+</li>
+
+</ul>
+
+</section>
+
+<section class="stream-section">
+
+<div class="section-label">
+Frequently Asked Questions
+</div>
+
+<div class="faq-list">
+
+  <div class="faq-item">
+    <h3>
+      Where can I watch {{ pageData.tournament.name }} in {{ pageData.countryCode | capitalize }}?
+    </h3>
+
+    <p>
+      {{ platformData.name }} is the official streaming platform for this tournament in {{ pageData.countryCode | capitalize }}.
+    </p>
+  </div>
+
+  {% if pageData.tv %}
+  <div class="faq-item">
+    <h3>
+      Can I watch {{ pageData.tournament.name }} on TV?
+    </h3>
+
+    <p>
+      Yes. Television coverage is available through {{ pageData.tv }}.
+    </p>
+  </div>
+  {% endif %}
+
+  <div class="faq-item">
+    <h3>
+      Can I stream matches online?
+    </h3>
+
+    <p>
+      Yes. Matches can be streamed online through {{ platformData.name }} where available.
+    </p>
+  </div>
+
+</div>
+
+</section>
+
+</main>

@@ -1,0 +1,138 @@
+---
+layout: ../layouts/base.njk
+
+pagination:
+  data: tournaments
+  size: 1
+  alias: tournament
+
+permalink: "sport/{{ tournament.sport }}/{{ tournament.id }}/index.html"
+
+eleventyComputed:
+  title: "Where to Watch {{ tournament.name }} {{ tournament.season }}"
+  description: "Watch {{ tournament.name }} live worldwide. Find streaming services, TV channels, pricing and country-specific broadcast information."
+---
+
+<header class="sport-hero">
+  <div class="sport-hero-inner">
+
+    <div class="hero-eyebrow">
+      {{ tournament.sport | upper }}
+    </div>
+
+    <h1 class="sport-hero-title">
+      {{ tournament.name }}
+    </h1>
+
+    <p class="sport-hero-sub">
+      {{ tournament.description }}
+    </p>
+
+  </div>
+</header>
+
+<main class="sport-main">
+
+<section class="stream-section">
+
+<div class="section-label">
+Overview
+</div>
+
+<p>
+{{ tournament.name }} {{ tournament.season }} can be streamed across multiple countries.
+Select your country below to see official streaming platforms and TV broadcasters.
+</p>
+
+</section>
+
+<section class="stream-section">
+
+<h2>
+Available Countries
+</h2>
+
+<ul>
+
+{% for countryCode, info in tournament.broadcasts %}
+
+<li>
+  <a href="/sport/{{ tournament.sport }}/{{ tournament.id }}/{{ countryCode }}/">
+    {{ countryCode | capitalize }}
+  </a>
+</li>
+
+{% endfor %}
+
+</ul>
+
+</section>
+
+<section class="stream-section">
+
+<h2>
+About {{ tournament.name }}
+</h2>
+
+<p>
+{{ tournament.description }}
+</p>
+
+<p>
+Fans worldwide search for where to watch {{ tournament.name }} live.
+This guide provides country-specific streaming information and official broadcast partners.
+</p>
+
+</section>
+
+<section class="stream-section">
+
+<h2>
+Frequently Asked Questions
+</h2>
+
+<h3>
+Where can I watch {{ tournament.name }}?
+</h3>
+
+<p>
+Select your country above to view available streaming services and television broadcasters.
+</p>
+
+<h3>
+Is {{ tournament.name }} available online?
+</h3>
+
+<p>
+Yes. Streaming availability varies by country and broadcasting rights.
+</p>
+
+</section>
+
+<section class="stream-section">
+
+<div class="section-label">
+Related {{ tournament.sport | capitalize }} Tournaments
+</div>
+
+<ul>
+
+{% for item in tournaments %}
+
+{% if item.sport == tournament.sport and item.id != tournament.id %}
+
+<li>
+<a href="/sport/{{ item.sport }}/{{ item.id }}/">
+{{ item.name }}
+</a>
+</li>
+
+{% endif %}
+
+{% endfor %}
+
+</ul>
+
+</section>
+
+</main>

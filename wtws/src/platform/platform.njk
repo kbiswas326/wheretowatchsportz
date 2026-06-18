@@ -1,0 +1,98 @@
+---
+layout: ../layouts/base.njk
+
+pagination:
+  data: platforms
+  size: 1
+  alias: platform
+
+permalink: "platform/{{ platform.id }}/index.html"
+
+eleventyComputed:
+  title: "{{ platform.name }} Sports Streaming Guide"
+  description: "{{ platform.description }}"
+---
+
+<header class="sport-hero">
+  <div class="sport-hero-inner">
+
+    <div class="hero-eyebrow">
+      Streaming Platform
+    </div>
+
+    <h1 class="sport-hero-title">
+      {{ platform.name }}
+    </h1>
+
+    <p class="sport-hero-sub">
+      {{ platform.description }}
+    </p>
+
+  </div>
+</header>
+
+<main class="sport-main">
+
+<section class="stream-section">
+
+<div class="section-label">
+Platform Information
+</div>
+
+<p>
+Type: {{ platform.type }}
+</p>
+
+<p>
+Price: {{ platform.price }}
+</p>
+
+<p>
+Available in:
+{{ platform.countries | join(", ") }}
+</p>
+
+</section>
+
+<section class="stream-section">
+
+<h2>Sports Covered</h2>
+
+<ul>
+{% for sport in platform.sports %}
+<li>{{ sport }}</li>
+{% endfor %}
+</ul>
+</section>
+
+<section class="stream-section">
+
+<div class="section-label">
+Popular Tournaments
+</div>
+
+<ul>
+
+{% for tournament in tournaments %}
+
+{% for country, info in tournament.broadcasts %}
+
+{% if info.streaming == platform.name %}
+
+<li>
+<a href="/sport/{{ tournament.sport }}/{{ tournament.id }}/">
+{{ tournament.name }}
+</a>
+</li>
+
+{% endif %}
+
+{% endfor %}
+
+{% endfor %}
+
+</ul>
+
+</section>
+
+</main>

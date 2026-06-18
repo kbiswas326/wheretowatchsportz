@@ -1,0 +1,22 @@
+[
+  {
+    "id": "cricket",
+    "name": "Cricket",
+    "description": "Find where to watch cricket live worldwide including IPL, ICC tournaments, Test cricket and T20 leagues."
+  },
+  {
+    "id": "football",
+    "name": "Football",
+    "description": "Find where to watch football live including Premier League, Champions League, La Liga and international tournaments."
+  },
+  {
+    "id": "f1",
+    "name": "Formula 1",
+    "description": "Find where to watch Formula 1 live including races, qualifying and practice sessions."
+  },
+  {
+    "id": "tennis",
+    "name": "Tennis",
+    "description": "Find where to watch tennis live including Wimbledon, US Open, Australian Open and ATP events."
+  }
+]

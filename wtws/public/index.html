@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhereToWatchSportz — Where to Watch Every Match</title>
+  <meta name="description" content="Find where to watch Cricket, Football, Formula 1, Tennis live — streaming guides for India and global platforms." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="/" class="nav-logo">Where<span class="logo-accent">ToWatch</span>Sportz</a>
+    <div class="nav-links">
+      <a href="/" class="active">Home</a>
+      <a href="/category-cricket.html">Cricket</a>
+      <a href="/category-football.html">Football</a>
+      <a href="/category-f1.html">F1</a>
+      <a href="/category-tennis.html">Tennis</a>
+      <a href="/fixtures.html">Fixtures</a>
+      <a href="/platforms.html">Platforms</a>
+    </div>
+    <div class="nav-right">
+      <button class="search-btn" aria-label="Search">🔍</button>
+      <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/">Home</a>
+    <a href="/category-cricket.html">🏏 Cricket</a>
+    <a href="/category-football.html">⚽ Football</a>
+    <a href="/category-f1.html">🏎 F1</a>
+    <a href="/category-tennis.html">🎾 Tennis</a>
+    <a href="/fixtures.html">📅 Fixtures</a>
+    <a href="/platforms.html">📺 Platforms</a>
+  </div>
+
+  <main class="site-main">
+
+    <!-- HERO FEATURED STORY -->
+    <section class="featured-section">
+      <a href="/posts/sample-ipl-2026-guide.html" class="featured-card">
+        <div class="featured-image">
+          <div class="featured-image-placeholder">🏏</div>
+          <span class="featured-badge">Featured</span>
+        </div>
+        <div class="featured-content">
+          <div class="post-meta-top">
+            <span class="category-tag cat-cricket">Cricket</span>
+            <span class="meta-date">June 16, 2026</span>
+          </div>
+          <h1 class="featured-title">IPL 2026: Where to Watch Every Match Live — Free &amp; Paid Options</h1>
+          <p class="featured-desc">A complete breakdown of every platform streaming IPL 2026, in India and worldwide, including free options.</p>
+          <div class="post-meta-bottom">
+            <img src="/images/authors/placeholder-avatar.svg" alt="" class="author-avatar" onerror="this.style.display='none'" />
+            <span class="meta-author">By Kaustav Biswas</span>
+            <span class="meta-dot">·</span>
+            <span class="meta-read">4 min read</span>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <!-- LATEST NEWS GRID -->
+    <section class="latest-section">
+      <div class="section-header">
+        <h2 class="section-heading">Latest Guides</h2>
+        <a href="/articles.html" class="see-all">See All →</a>
+      </div>
+      <div class="news-grid" id="newsGrid">
+
+        <a href="#" class="news-card">
+          <div class="news-card-image football-img">⚽</div>
+          <div class="news-card-body">
+            <span class="category-tag cat-football">Football</span>
+            <h3 class="news-card-title">Where to Watch Real Madrid vs Juventus — Champions League Group Stage</h3>
+            <p class="news-card-desc">The eagerly anticipated UEFA Champions League group stage clash between Real Madrid and Juventus.</p>
+            <div class="news-card-meta">By Kaustav Biswas · 3 min read</div>
+          </div>
+        </a>
+
+        <a href="#" class="news-card">
+          <div class="news-card-image f1-img">🏎</div>
+          <div class="news-card-body">
+            <span class="category-tag cat-f1">Formula 1</span>
+            <h3 class="news-card-title">Monaco GP 2026: Full Streaming Guide for Every Region</h3>
+            <p class="news-card-desc">F1 TV Pro, Sky F1, and ESPN+ — here's exactly how to watch the Monaco Grand Prix wherever you are.</p>
+            <div class="news-card-meta">By Kaustav Biswas · 3 min read</div>
+          </div>
+        </a>
+
+        <a href="#" class="news-card">
+          <div class="news-card-image tennis-img">🎾</div>
+          <div class="news-card-body">
+            <span class="category-tag cat-tennis">Tennis</span>
+            <h3 class="news-card-title">Wimbledon 2026: Where to Stream Every Match Live</h3>
+            <p class="news-card-desc">ESPN+, BBC iPlayer, and SonyLIV all carry Wimbledon — here's which one is right for your country.</p>
+            <div class="news-card-meta">By Kaustav Biswas · 3 min read</div>
+          </div>
+        </a>
+
+        <a href="#" class="news-card">
+          <div class="news-card-image cricket-img">🏏</div>
+          <div class="news-card-body">
+            <span class="category-tag cat-cricket">Cricket</span>
+            <h3 class="news-card-title">India vs England: Test Series Streaming Guide</h3>
+            <p class="news-card-desc">JioCinema, Star Sports, and Sky Sports — full coverage breakdown for the upcoming Test series.</p>
+            <div class="news-card-meta">By Kaustav Biswas · 3 min read</div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- UPCOMING FIXTURES STRIP -->
+    <section class="fixtures-section">
+      <div class="section-header">
+        <h2 class="section-heading">Upcoming Fixtures</h2>
+        <a href="/fixtures.html" class="see-all">All Fixtures →</a>
+      </div>
+      <div class="fixtures-strip">
+        <a href="#" class="fixture-chip">
+          <span class="fixture-chip-cat">🏏 Cricket</span>
+          <span class="fixture-chip-match">IND vs ENG</span>
+          <span class="fixture-chip-time">Jun 20 · 2:00 PM IST</span>
+        </a>
+        <a href="#" class="fixture-chip">
+          <span class="fixture-chip-cat">⚽ Football</span>
+          <span class="fixture-chip-match">RMA vs JUV</span>
+          <span class="fixture-chip-time">Jun 21 · 12:30 AM IST</span>
+        </a>
+        <a href="#" class="fixture-chip">
+          <span class="fixture-chip-cat">🏎 F1</span>
+          <span class="fixture-chip-match">Monaco GP — Race</span>
+          <span class="fixture-chip-time">Jun 22 · 8:30 PM IST</span>
+        </a>
+        <a href="#" class="fixture-chip">
+          <span class="fixture-chip-cat">🎾 Tennis</span>
+          <span class="fixture-chip-match">Wimbledon — R1</span>
+          <span class="fixture-chip-time">Jun 23 · 4:30 PM IST</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- BROWSE BY CATEGORY -->
+    <section class="categories-section">
+      <h2 class="section-heading">Browse by Sport</h2>
+      <div class="categories-grid">
+        <a href="/category-cricket.html" class="category-block cat-block-cricket">
+          <span class="cat-block-icon">🏏</span>
+          <span class="cat-block-name">Cricket</span>
+        </a>
+        <a href="/category-football.html" class="category-block cat-block-football">
+          <span class="cat-block-icon">⚽</span>
+          <span class="cat-block-name">Football</span>
+        </a>
+        <a href="/category-f1.html" class="category-block cat-block-f1">
+          <span class="cat-block-icon">🏎</span>
+          <span class="cat-block-name">Formula 1</span>
+        </a>
+        <a href="/category-tennis.html" class="category-block cat-block-tennis">
+          <span class="cat-block-icon">🎾</span>
+          <span class="cat-block-name">Tennis</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">Where<span class="logo-accent">ToWatch</span>Sportz</div>
+        <p class="footer-tagline">Your guide to watching every match, everywhere.</p>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-col">
+          <div class="footer-col-title">Categories</div>
+          <a href="/category-cricket.html">Cricket</a>
+          <a href="/category-football.html">Football</a>
+          <a href="/category-f1.html">Formula 1</a>
+          <a href="/category-tennis.html">Tennis</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Site</div>
+          <a href="/fixtures.html">Fixtures</a>
+          <a href="/platforms.html">Platforms</a>
+          <a href="/about.html">About</a>
+          <a href="/admin/">Admin ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 WhereToWatchSportz · Not affiliated with any streaming platform · All trademarks belong to their owners</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

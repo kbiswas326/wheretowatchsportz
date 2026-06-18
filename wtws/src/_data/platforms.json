@@ -1,0 +1,153 @@
+[
+  {
+    "id": "jiohotstar",
+    "name": "JioHotstar",
+    "website": "https://www.jiohotstar.com",
+    "type": "Streaming",
+    "countries": ["india"],
+    "sports": ["cricket", "football"],
+    "price": "Free + Premium",
+    "description": "JioHotstar streams major sports events in India."
+  },
+  {
+    "id": "sky-sports",
+    "name": "Sky Sports",
+    "website": "https://www.skysports.com",
+    "type": "TV + Streaming",
+    "countries": ["uk"],
+    "sports": ["cricket", "football", "f1"],
+    "price": "Subscription",
+    "description": "Sky Sports broadcasts major sporting events in the UK."
+  },
+  {
+    "id": "willow-tv",
+    "name": "Willow TV",
+    "website": "https://www.willow.tv",
+    "type": "Streaming",
+    "countries": ["usa"],
+    "sports": ["cricket"],
+    "price": "$10/month",
+    "description": "Willow TV is the leading cricket streaming platform in the USA."
+  },
+
+  {
+  "id": "sonyliv",
+  "name": "SonyLIV",
+  "description": "SonyLIV streams football, tennis and cricket events in India.",
+  "type": "Streaming",
+  "price": "Premium Subscription",
+  "countries": ["india"],
+  "sports": ["football", "tennis", "cricket"]
+},
+{
+  "id": "peacock",
+  "name": "Peacock",
+  "description": "Peacock streams Premier League football in the United States.",
+  "type": "Streaming",
+  "price": "Subscription",
+  "countries": ["usa"],
+  "sports": ["football"]
+},
+{
+  "id": "paramount-plus",
+  "name": "Paramount+",
+  "description": "Paramount+ streams UEFA competitions in the United States.",
+  "type": "Streaming",
+  "price": "Subscription",
+  "countries": ["usa"],
+  "sports": ["football"]
+},
+{
+  "id": "zee5",
+  "name": "ZEE5",
+  "description": "ZEE5 streams major football tournaments and FIFA events in India.",
+  "type": "Streaming",
+  "price": "Subscription",
+  "countries": ["india"],
+  "sports": ["football"]
+},
+{
+  "id": "tnt-sports",
+  "name": "TNT Sports",
+  "description": "TNT Sports broadcasts UEFA Champions League in the UK.",
+  "type": "TV + Streaming",
+  "price": "Subscription",
+  "countries": ["uk"],
+  "sports": ["football"]
+},
+{
+  "id": "fancode",
+  "name": "FanCode",
+  "description": "FanCode streams cricket events including PSL in India.",
+  "type": "Streaming",
+  "price": "Subscription",
+  "countries": ["india"],
+  "sports": ["cricket"]
+},
+
+{
+  "id": "espn-plus",
+  "name": "ESPN+",
+  "description": "ESPN+ streams La Liga, Bundesliga and a wide range of international sports in the United States.",
+  "type": "Streaming",
+  "price": "Subscription",
+  "countries": ["usa"],
+  "sports": ["football", "tennis", "f1"]
+},
+{
+  "id": "gxr",
+  "name": "GXR",
+  "description": "GXR streams selected international football competitions in India.",
+  "type": "Streaming",
+  "price": "Free",
+  "countries": ["india"],
+  "sports": ["football"]
+},
+{
+  "id": "premier-sports",
+  "name": "Premier Sports",
+  "description": "Premier Sports broadcasts international football and sports competitions in the United Kingdom.",
+  "type": "Streaming & TV",
+  "price": "Subscription",
+  "countries": ["uk"],
+  "sports": ["football"]
+},
+{
+  "id": "bbc-iplayer",
+  "name": "BBC iPlayer",
+  "description": "BBC iPlayer streams Wimbledon and major sporting events in the United Kingdom.",
+  "type": "Streaming",
+  "price": "Free",
+  "countries": ["uk"],
+  "sports": ["tennis", "football"]
+},
+{
+  "id": "eurosport-player",
+  "name": "Eurosport Player",
+  "description": "Eurosport Player streams tennis, cycling and other sports events in Europe.",
+  "type": "Streaming",
+  "price": "Subscription",
+  "countries": ["uk", "france", "germany"],
+  "sports": ["tennis"]
+},
+
+{
+  "id": "fubo-tv",
+  "name": "FuboTV",
+  "description": "FuboTV streams football, tennis and other sports events in the United States.",
+  "type": "Streaming",
+  "price": "Subscription",
+  "countries": ["usa"],
+  "sports": ["football", "tennis"]
+},
+
+{
+  "id": "tennis-channel",
+  "name": "Tennis Channel",
+  "description": "Tennis Channel streams major tennis tournaments including Wimbledon and US Open in the United States.",
+  "type": "TV + Streaming",
+  "price": "Subscription",
+  "countries": ["usa"],
+  "sports": ["tennis"]
+}
+]

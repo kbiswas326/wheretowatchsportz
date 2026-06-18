@@ -1,0 +1,124 @@
+---
+layout: ../layouts/base.njk
+
+pagination:
+  data: sports
+  size: 1
+  alias: sport
+
+permalink: "sport/{{ sport.id }}/index.html"
+
+eleventyComputed:
+  title: "Where to Watch {{ sport.name }}"
+  description: "{{ sport.description }}"
+---
+
+<header class="sport-hero">
+  <div class="sport-hero-inner">
+
+    <div class="hero-eyebrow">
+      SPORT
+    </div>
+
+    <h1 class="sport-hero-title">
+      {{ sport.name }}
+    </h1>
+
+    <p class="sport-hero-sub">
+      {{ sport.description }}
+    </p>
+
+  </div>
+</header>
+
+<main class="sport-main">
+
+<section class="stream-section">
+
+  <div class="section-label">
+    Major Tournaments
+  </div>
+
+  <p>
+    Find where to watch {{ sport.name }} live worldwide. Browse major tournaments,
+    official broadcasters and streaming platforms by country.
+  </p>
+
+  <div class="stream-grid">
+
+    {% for tournament in tournaments %}
+
+      {% if tournament.sport == sport.id %}
+
+      <div class="stream-card">
+
+        <h3>
+          {{ tournament.name }}
+        </h3>
+
+        <p>
+          {{ tournament.description }}
+        </p>
+
+        <a
+          href="/sport/{{ sport.id }}/{{ tournament.id }}/"
+          class="stream-cta"
+        >
+          View Guide →
+        </a>
+
+      </div>
+
+      {% endif %}
+
+    {% endfor %}
+
+  </div>
+
+</section>
+
+<section class="stream-section">
+
+  <div class="section-label">
+    About {{ sport.name }}
+  </div>
+
+  <p>
+    {{ sport.description }}
+  </p>
+
+  <p>
+    Our guides help fans discover where to watch {{ sport.name }} live,
+    including streaming services, television channels, subscription options,
+    and country-specific broadcast information.
+  </p>
+
+</section>
+
+<section class="stream-section">
+
+  <div class="section-label">
+    Frequently Asked Questions
+  </div>
+
+  <h3>
+    Where can I watch {{ sport.name }} live?
+  </h3>
+
+  <p>
+    Streaming rights vary by tournament and country. Browse the tournaments
+    above to find official broadcasters and streaming services.
+  </p>
+
+  <h3>
+    Can I watch {{ sport.name }} online?
+  </h3>
+
+  <p>
+    Yes. Most major tournaments are available through official streaming
+    platforms and television broadcasters.
+  </p>
+
+</section>
+
+</main>
