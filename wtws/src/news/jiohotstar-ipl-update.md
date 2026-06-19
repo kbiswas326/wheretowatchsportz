@@ -1,5 +1,5 @@
 ---
-layout: base.njk
+layout: article.njk
 tags: news
 
 title: JioHotstar Announces IPL Streaming Update

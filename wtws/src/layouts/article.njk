@@ -1,0 +1,63 @@
+---
+layout: base.njk
+---
+<article class="article-page">
+  <div class="article-container">
+
+    <div class="article-eyebrow">
+      <span class="eyebrow-tag">{{ category | default("News") | upper }}</span>
+      {% if date %}<time class="eyebrow-date">{{ date | readableDate }}</time>{% endif %}
+    </div>
+
+    <h1 class="article-title">{{ title }}</h1>
+
+    {% if description %}
+    <p class="article-description">{{ description }}</p>
+    {% endif %}
+
+    {% if author %}
+    <div class="article-byline">
+      {% if author.photo %}
+      <img class="byline-avatar" src="{{ author.photo }}" alt="{{ author.name }}" />
+      {% else %}
+      <span class="byline-avatar byline-avatar-fallback">{{ author.name | slice(0,1) }}</span>
+      {% endif %}
+      <div class="byline-text">
+        <a class="byline-name" href="/authors/{{ author.slug }}/">{{ author.name }}</a>
+        {% if author.role %}<span class="byline-role">{{ author.role }}</span>{% endif %}
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="article-rule"></div>
+
+    <div class="article-content">
+      {{ content | safe }}
+    </div>
+
+    {% if tags %}
+    <div class="article-tags">
+      {% for tag in tags %}
+      <a class="tag-pill" href="/tags/{{ tag | slugify }}/">#{{ tag }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if author %}
+    <div class="article-author-card">
+      {% if author.photo %}
+      <img class="author-card-avatar" src="{{ author.photo }}" alt="{{ author.name }}" />
+      {% else %}
+      <span class="author-card-avatar author-card-avatar-fallback">{{ author.name | slice(0,1) }}</span>
+      {% endif %}
+      <div class="author-card-body">
+        <p class="author-card-label">Written by</p>
+        <a class="author-card-name" href="/authors/{{ author.slug }}/">{{ author.name }}</a>
+        {% if author.credibility_note %}<p class="author-card-credibility">{{ author.credibility_note }}</p>{% endif %}
+        {% if author.bio_short %}<p class="author-card-bio">{{ author.bio_short }}</p>{% endif %}
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
+</article>
