@@ -1,0 +1,58 @@
+---
+layout: base.njk
+title: Sports Streaming News
+description: Latest sports streaming, broadcast rights and platform updates.
+permalink: /news/
+---
+
+<section class="sports-section">
+
+  <div class="section-label">
+    LATEST NEWS
+  </div>
+
+  <div class="section-title">
+    Sports Streaming News
+  </div>
+
+  {% if collections.news and collections.news.length %}
+
+    <div class="card-grid">
+
+      {% for post in collections.news | reverse %}
+
+      <a href="{{ post.url }}" class="sport-card">
+
+        <div class="card-body">
+
+          <div class="card-tag">
+            NEWS
+          </div>
+
+          <div class="card-title">
+            {{ post.data.title }}
+          </div>
+
+          <div class="card-desc">
+            {{ post.data.description }}
+          </div>
+
+        </div>
+
+        <div class="card-arrow">→</div>
+
+      </a>
+
+      {% endfor %}
+
+    </div>
+
+  {% else %}
+
+    <p>
+      No news articles have been published yet.
+    </p>
+
+  {% endif %}
+
+</section>
