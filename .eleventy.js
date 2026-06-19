@@ -1,19 +1,19 @@
 module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({
-    "wtws/css": "css"
+    "wtws/public/css": "css"
   });
 
   eleventyConfig.addPassthroughCopy({
-    "wtws/js": "js"
+    "wtws/public/js": "js"
   });
 
   eleventyConfig.addPassthroughCopy({
-    "wtws/admin": "admin"
+    "wtws/public/admin": "admin"
   });
 
   eleventyConfig.addPassthroughCopy({
-    "wtws/images": "images"
+    "wtws/public/images": "images"
   });
 
   return {

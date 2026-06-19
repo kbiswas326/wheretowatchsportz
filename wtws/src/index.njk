@@ -1,11 +1,33 @@
 ---
 layout: base.njk
-permalink: "/index.html"
-
-title: WhereToWatchSportz
-description: Find where to watch Cricket, Football, Formula 1 and Tennis worldwide.
+title: WhereToWatchSportz - Find Every Match, Every Stream
+description: Your global sports streaming guide. Find where to watch cricket, football, Formula 1, tennis and more.
+permalink: /
 ---
+
+<div class="hero-ticker">
+  <div class="ticker-track">
+    <a href="/sport/cricket/champions-trophy/"><span>⭐ CHAMPIONS TROPHY 2027</span></a>
+    <a href="/sport/football/champions-league/"><span>🏆 UCL FINAL 2026</span></a>
+    <a href="/sport/f1/monaco-gp/"><span>🏁 MONACO GP 2026</span></a>
+    <a href="/sport/cricket/ipl/"><span>🏏 IPL 2026</span></a>
+    <a href="/sport/football/premier-league/"><span>⚽ PREMIER LEAGUE 2026</span></a>
+    <a href="/sport/tennis/wimbledon/"><span>🎾 WIMBLEDON 2026</span></a>
+    <a href="/sport/football/premier-league/"><span>🏀 NBA PLAYOFFS 2026</span></a>
+    <a href="/sport/cricket/t20-world-cup/"><span>🏈 T20 WORLD CUP 2026</span></a>
+    <a href="/sport/cricket/ashes/"><span>🏏 THE ASHES 2027</span></a>
+    <a href="/sport/f1/formula-1-season/"><span>🏎️ FORMULA 1 2026</span></a>
+    <a href="/sport/cricket/champions-trophy/"><span>⭐ CHAMPIONS TROPHY 2027</span></a>
+    <a href="/sport/football/champions-league/"><span>🏆 UCL FINAL 2026</span></a>
+    <a href="/sport/f1/monaco-gp/"><span>🏁 MONACO GP 2026</span></a>
+    <a href="/sport/cricket/ipl/"><span>🏏 IPL 2026</span></a>
+    <a href="/sport/football/premier-league/"><span>⚽ PREMIER LEAGUE 2026</span></a>
+    <a href="/sport/tennis/wimbledon/"><span>🎾 WIMBLEDON 2026</span></a>
+  </div>
+</div>
+
 <header class="home-hero">
+<div class="hero-bg"></div>
 
   <div class="home-hero-inner">
 
@@ -14,109 +36,89 @@ description: Find where to watch Cricket, Football, Formula 1 and Tennis worldwi
     </div>
 
     <h1 class="home-title">
-      FIND EVERY
-      <span>MATCH.</span>
-      EVERY STREAM.
-    </h1>
+  FIND EVERY<br>
+  <span>MATCH.</span> EVERY<br>
+  STREAM.
+</h1>
 
     <p class="home-sub">
       Cricket · Football · Formula 1 · Tennis · and more
       <br>
-      Official streaming platforms and TV broadcasters worldwide.
+      Indian & Global platforms, all in one place.
     </p>
+
+    <form class="hero-search">
+      <input
+        type="text"
+        placeholder="Search a sport, tournament or platform..."
+      >
+      <button>Search</button>
+    </form>
+
+    <div class="hero-badges">
+      <span>Jio Cinema</span>
+      <span>Hotstar</span>
+      <span>Sony LIV</span>
+      <span>ESPN+</span>
+      <span>FLI TV</span>
+      <span>DAZN</span>
+      <span>Sky Sports</span>
+      <span>Willow TV</span>
+    </div>
 
   </div>
 
 </header>
 
-<section class="stream-section">
-
-  <div class="section-label">
-    Browse By Sport
-  </div>
-
+<section class="sports-section">
+  <div class="section-label">BROWSE BY SPORT</div>
+  <div class="section-title">Find Your Sport</div>
+  
   <div class="card-grid">
-
-    <a class="guide-card" href="/sport/cricket/">
-      <h3>Cricket</h3>
-      <p>IPL, ICC tournaments, Tests and T20 leagues.</p>
-    </a>
-
-    <a class="guide-card" href="/sport/football/">
-      <h3>Football</h3>
-      <p>Premier League, Champions League and more.</p>
-    </a>
-
-    <a class="guide-card" href="/sport/f1/">
-      <h3>Formula 1</h3>
-      <p>F1 season guides and Grand Prix coverage.</p>
-    </a>
-
-    <a class="guide-card" href="/sport/tennis/">
-      <h3>Tennis</h3>
-      <p>Grand Slams and ATP tournaments.</p>
-    </a>
-
+    {% for sport in sports %}
+      <a href="/sport/{{ sport.slug }}/" class="sport-card">
+        <div class="card-sport-icon">{{ sport.emoji }}</div>
+        <div class="card-body">
+          <div class="card-tag">Sport</div>
+          <div class="card-title">{{ sport.name }}</div>
+          <div class="card-desc">{{ sport.description }}</div>
+          <div class="card-platforms">
+            {% for platform in sport.platforms | slice(0, 3) %}
+              <span>{{ platform }}</span>
+            {% endfor %}
+            {% if sport.platforms.length > 3 %}
+              <span>+{{ sport.platforms.length - 3 }}</span>
+            {% endif %}
+          </div>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
+    {% endfor %}
   </div>
-
 </section>
 
-<section class="stream-section">
-
-  <div class="section-label">
-    Popular Tournaments
-  </div>
-
+<section class="sports-section">
+  <div class="section-label">FEATURED TOURNAMENTS</div>
+  <div class="section-title">Upcoming Events</div>
+  
   <div class="card-grid">
-
-    <a class="guide-card" href="/sport/cricket/ipl/">
-      <h3>Indian Premier League</h3>
-    </a>
-
-    <a class="guide-card" href="/sport/cricket/icc-champions-trophy/">
-      <h3>ICC Champions Trophy</h3>
-    </a>
-
-    <a class="guide-card" href="/sport/football/premier-league/">
-      <h3>Premier League</h3>
-    </a>
-
-    <a class="guide-card" href="/sport/tennis/wimbledon/">
-      <h3>Wimbledon</h3>
-    </a>
-
-    <a class="guide-card" href="/sport/f1/formula-1-season/">
-      <h3>Formula 1 Season</h3>
-    </a>
-
+    {% for tournament in tournaments %}
+      {% if loop.index <= 4 %}
+      <a href="/sport/{{ tournament.sport }}/{{ tournament.id }}/" class="sport-card">
+        <div class="card-sport-icon">
+          {% if tournament.sport == "cricket" %}🏏{% elif tournament.sport == "football" %}⚽{% elif tournament.sport == "f1" %}🏁{% elif tournament.sport == "tennis" %}🎾{% else %}🏆{% endif %}
+        </div>
+        <div class="card-body">
+          <div class="card-tag">{{ tournament.sport | upper }}</div>
+          <div class="card-title">{{ tournament.name }}</div>
+          <div class="card-desc">{{ tournament.description }}</div>
+          <div class="card-platforms">
+            <span>Season {{ tournament.season }}</span>
+          </div>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
+      {% endif %}
+    {% endfor %}
   </div>
-
-</section>
-
-<section class="stream-section">
-
-  <div class="section-label">
-    Streaming Platforms
-  </div>
-
-  <div class="card-grid">
-
-    <a class="guide-card" href="/platform/jiohotstar/">
-      <h3>JioHotstar</h3>
-    </a>
-
-    <a class="guide-card" href="/platform/sky-sports/">
-      <h3>Sky Sports</h3>
-    </a>
-
-    <a class="guide-card" href="/platform/willow-tv/">
-      <h3>Willow TV</h3>
-    </a>
-
-    <a class="guide-card" href="/platform/espn-plus/">
-      <h3>ESPN+</h3>
-    </a>
-
-  </div>
-
 </section>
