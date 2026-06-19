@@ -69,28 +69,29 @@ eleventyComputed:
 {% if pageData.tournament.image %}
 <section class="feature-image-section">
 
-  <img
-    src="{{ pageData.tournament.image }}"
-    alt="{{ pageData.tournament.name }}"
-    class="feature-image"
-  >
-
-</section>
-{% endif %}
-
-<section class="feature-image-section">
-
   <div class="feature-image-frame">
 
     <img
-      src="{{ imagePath }}"
-      alt="{{ pageData.tournament.name }} {{ pageData.tournament.season }}"
+      src="{{ pageData.tournament.image }}"
+      alt="{{ pageData.tournament.name }}"
       class="feature-image"
     >
 
   </div>
 
 </section>
+
+{% else %}
+
+<section class="feature-image-section">
+
+  <div class="hero-fallback">
+    <h2>{{ pageData.tournament.name }}</h2>
+  </div>
+
+</section>
+
+{% endif %}
 
 <main class="sport-main">
 
