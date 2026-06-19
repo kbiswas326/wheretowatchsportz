@@ -149,5 +149,14 @@
   "price": "Subscription",
   "countries": ["usa"],
   "sports": ["tennis"]
+},
+{
+  "id": "f1-tv-pro",
+  "name": "F1 TV Pro",
+  "description": "Official Formula 1 streaming service offering live races, onboard cameras and exclusive content.",
+  "type": "Streaming",
+  "price": "Subscription",
+  "countries": ["india", "uk", "usa"],
+  "sports": ["f1"]
 }
 ]
