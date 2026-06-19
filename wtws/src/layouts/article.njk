@@ -6,7 +6,7 @@ layout: base.njk
 
     <div class="article-eyebrow">
       <span class="eyebrow-tag">{{ category | default("News") | upper }}</span>
-      {% if date %}<time class="eyebrow-date">{{ date | readableDate }}</time>{% endif %}
+      {{ date }}
     </div>
 
     <h1 class="article-title">{{ title }}</h1>
