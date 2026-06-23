@@ -67,6 +67,7 @@ eleventyComputed:
 </header>
 
 {% if pageData.tournament.image %}
+
 <section class="feature-image-section">
 
   <div class="feature-image-frame">
@@ -81,15 +82,7 @@ eleventyComputed:
 
 </section>
 
-{% else %}
-
-<section class="feature-image-section">
-
-  <div class="hero-fallback">
-    <h2>{{ pageData.tournament.name }}</h2>
-  </div>
-
-</section>
+{% endif %}
 
 {% endif %}
 
