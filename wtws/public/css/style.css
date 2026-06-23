@@ -76,7 +76,8 @@ img { max-width: 100%; display: block; }
 /* === TICKER === */
 .hero-ticker {
   width: 100%; overflow: hidden;
-  background: var(--accent); padding: 0.45rem 0;
+  background: var(--accent); padding: 0.45rem 0; position: relative;
+  z-index: 100;
 }
 .ticker-track {
   display: flex;
@@ -508,6 +509,7 @@ img { max-width: 100%; display: block; }
   margin:0 auto;
   padding:70px 20px 60px;
   position:relative;
+  z-index: 1;
 }
 
 .home-title{
@@ -554,6 +556,7 @@ img { max-width: 100%; display: block; }
 .hero-bg{
   position:absolute;
   inset:0;
+  z-index: -1;
 
   background:
     linear-gradient(
