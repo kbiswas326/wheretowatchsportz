@@ -79,9 +79,12 @@ img { max-width: 100%; display: block; }
   background: var(--accent); padding: 0.45rem 0;
 }
 .ticker-track {
-  display: flex; gap: 3rem; width: max-content;
-  animation: ticker 28s linear infinite;
+  display: flex;
+  gap: 3rem;
+  width: max-content;
+  animation: ticker 60s linear infinite;
 }
+
 .ticker-track a {
   display: flex; align-items: center; text-decoration: none;
   transition: opacity 0.2s;
@@ -95,8 +98,10 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--black); white-space: nowrap;
 }
-@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-25%); }
+}
 /* === HERO === */
 .hero { border-bottom: 1px solid var(--border); }
 .hero-inner {
