@@ -921,3 +921,62 @@ img { max-width: 100%; display: block; }
   text-align:center;
   padding:18px;
 }
+
+/* =========================
+   MOBILE NAVIGATION
+========================= */
+
+.menu-toggle{
+  display:none;
+  background:none;
+  border:none;
+  color:#ffd84d;
+  font-size:2rem;
+  font-weight:700;
+  cursor:pointer;
+  line-height:1;
+}
+
+.mobile-menu{
+  display:none;
+  flex-direction:column;
+  background:#111;
+  border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-menu a{
+  color:#fff;
+  text-decoration:none;
+  padding:16px 24px;
+  font-weight:600;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.mobile-menu a:hover{
+  background:rgba(255,216,77,0.08);
+  color:#ffd84d;
+}
+
+.mobile-menu.open{
+  display:flex;
+}
+
+@media (max-width: 768px){
+
+  .nav{
+    padding:16px 20px;
+  }
+
+  .nav-links{
+    display:none;
+  }
+
+  .menu-toggle{
+    display:block;
+  }
+
+  .nav-logo{
+    font-size:1.4rem;
+  }
+
+}

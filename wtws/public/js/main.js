@@ -28,3 +28,10 @@ document.addEventListener('click', e => {
 document.querySelectorAll('.nav-links a').forEach(link => {
   if (link.href === window.location.href) link.classList.add('active');
 });
+
+function toggleMenu() {
+  document
+    .getElementById("mobileMenu")
+    .classList
+    .toggle("open");
+}
