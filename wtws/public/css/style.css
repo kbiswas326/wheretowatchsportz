@@ -394,6 +394,14 @@ img { max-width: 100%; display: block; }
 }
 .free-tag { background: rgba(34,197,94,0.13); color: var(--free); }
 .paid-tag { background: rgba(245,158,11,0.1); color: var(--paid); }
+.country-list { display: flex; flex-direction: column; gap: 0.5rem; list-style: none; padding: 0; }
+.country-list li {
+  display: flex; align-items: center; gap: 0.8rem;
+  padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.country-list li a { color: var(--white); text-decoration: none; font-weight: 600; }
+.country-list li a:hover { color: var(--accent); }
+.free-note { font-size: 0.82rem; color: var(--muted-light); margin-top: 0.5rem; }
 .stream-coverage { display: flex; flex-direction: column; gap: 0.35rem; flex: 1; }
 .coverage-item {
   font-size: 0.8rem; color: var(--muted); padding: 0.28rem 0;
