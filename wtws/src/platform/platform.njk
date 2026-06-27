@@ -47,6 +47,16 @@ Type: {{ platform.type }}
 Price: {{ platform.price }}
 </p>
 
+<span class="stream-price {% if platform.isFree %}free-tag{% else %}paid-tag{% endif %}">
+  {% if platform.isFree %}FREE{% else %}PAID{% endif %}
+</span>
+
+{% if platform.isFree and platform.freeNote %}
+<p class="free-note">
+  {{ platform.freeNote }}
+</p>
+{% endif %}
+
 <p>
 Available in:
 {{ platform.countries | join(", ") }}
