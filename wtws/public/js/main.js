@@ -18,20 +18,13 @@ function filterSports(query) {
 
 document.addEventListener('click', e => {
   const menu = document.getElementById('mobileMenu');
-  const btn = document.querySelector('.nav-hamburger');
+  const btn = document.querySelector('.menu-toggle');
   if (menu && btn && !menu.contains(e.target) && !btn.contains(e.target)) {
     menu.classList.remove('open');
   }
 });
 
 // Highlight active nav link
-document.querySelectorAll('.nav-links a').forEach(link => {
+document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => {
   if (link.href === window.location.href) link.classList.add('active');
 });
-
-function toggleMenu() {
-  document
-    .getElementById("mobileMenu")
-    .classList
-    .toggle("open");
-}
