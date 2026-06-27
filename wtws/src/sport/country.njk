@@ -107,6 +107,16 @@ Coverage is also available on
 {% endif %}
 </p>
 
+<span class="stream-price {% if platformData.isFree %}free-tag{% else %}paid-tag{% endif %}">
+  {% if platformData.isFree %}FREE{% else %}PAID{% endif %}
+</span>
+
+{% if platformData.isFree and platformData.freeNote %}
+<p class="free-note">
+  {{ platformData.freeNote }}
+</p>
+{% endif %}
+
 </section>
 
 <section class="stream-section">
@@ -194,6 +204,20 @@ Frequently Asked Questions
 
     <p>
       {{ platformData.name }} is the official streaming platform for this tournament in {{ pageData.countryCode | capitalize }}.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>
+      Is {{ pageData.tournament.name }} free to watch in {{ pageData.countryCode | capitalize }}?
+    </h3>
+
+    <p>
+      {% if platformData.isFree %}
+        Yes. {{ platformData.name }} {% if platformData.freeNote %}{{ platformData.freeNote | lower }}{% else %}offers free access to this coverage{% endif %}.
+      {% else %}
+        {{ platformData.name }} requires a paid subscription to watch this tournament in {{ pageData.countryCode | capitalize }}. Check the platform's website for current trial offers.
+      {% endif %}
     </p>
   </div>
 
