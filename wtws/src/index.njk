@@ -77,6 +77,32 @@ permalink: /
 </section>
 
 <section class="sports-section">
+  <div class="section-label">FREE TO WATCH</div>
+  <div class="section-title">Watch Without Paying</div>
+
+  <div class="card-grid">
+    {% for platform in platforms %}
+      {% if platform.isFree %}
+      <a href="/platform/{{ platform.id }}/" class="sport-card">
+        <div class="card-sport-icon">🆓</div>
+        <div class="card-body">
+          <div class="card-tag">FREE</div>
+          <div class="card-title">{{ platform.name }}</div>
+          <div class="card-desc">{{ platform.freeNote or platform.description }}</div>
+          <div class="card-platforms">
+            {% for country in platform.countries %}
+              <span>{{ country | capitalize }}</span>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="sports-section">
   <div class="section-label">FEATURED TOURNAMENTS</div>
   <div class="section-title">Upcoming Events</div>
   
