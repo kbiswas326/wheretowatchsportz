@@ -81,7 +81,7 @@ Available in:
 Popular Tournaments
 </div>
 
-<ul>
+<div class="card-grid">
 
 {% for tournament in tournaments %}
 
@@ -89,11 +89,17 @@ Popular Tournaments
 
 {% if info.streaming == platform.name %}
 
-<li>
-<a href="/sport/{{ tournament.sport }}/{{ tournament.id }}/">
-{{ tournament.name }}
+<a href="/sport/{{ tournament.sport }}/{{ tournament.id }}/" class="sport-card">
+  <div class="card-sport-icon">
+    {% if tournament.sport == "cricket" %}🏏{% elif tournament.sport == "football" %}⚽{% elif tournament.sport == "f1" %}🏁{% elif tournament.sport == "tennis" %}🎾{% elif tournament.sport == "basketball" %}🏀{% elif tournament.sport == "golf" %}⛳{% else %}🏆{% endif %}
+  </div>
+  <div class="card-body">
+    <div class="card-tag">{{ tournament.sport | upper }}</div>
+    <div class="card-title">{{ tournament.name }}</div>
+    <div class="card-desc">{{ tournament.description }}</div>
+  </div>
+  <div class="card-arrow">→</div>
 </a>
-</li>
 
 {% endif %}
 
@@ -101,7 +107,7 @@ Popular Tournaments
 
 {% endfor %}
 
-</ul>
+</div>
 
 </section>
 
