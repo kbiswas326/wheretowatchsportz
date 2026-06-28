@@ -1,6 +1,6 @@
 ---
-title: India vs Australia: High-Stakes Women's T20 World Cup Clash at Lord's
-description: India Women posted 170/4 against Australia Women in their crucial Group 1 decider at Lord's — a win for either side books a semi-final spot.
+title: "India vs Australia - High-Stakes Womens T20 World Cup Clash at Lords"
+description: "India Women posted 170/4 against Australia Women in their crucial Group 1 decider at Lords - a win for either side books a semi-final spot."
 date: 2026-06-28
 layout: article.njk
 tags:
