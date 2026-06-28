@@ -269,5 +269,293 @@
     ],
     "isFree": false,
     "freeNote": null
+  },
+  {
+    "id": "kayo-sports",
+    "name": "Kayo Sports",
+    "website": "https://kayosports.com.au",
+    "type": "Streaming",
+    "countries": [
+      "australia"
+    ],
+    "sports": [
+      "cricket",
+      "football",
+      "f1",
+      "basketball",
+      "golf"
+    ],
+    "price": "AU$30/month (7-day free trial)",
+    "description": "Kayo Sports is Australia's leading sports streaming platform, covering cricket, football, F1, NBA and golf.",
+    "isFree": false,
+    "freeNote": null
+  },
+  {
+    "id": "fox-sports-australia",
+    "name": "Fox Sports Australia",
+    "website": "https://www.foxsports.com.au",
+    "type": "TV",
+    "countries": [
+      "australia"
+    ],
+    "sports": [
+      "cricket",
+      "golf"
+    ],
+    "price": "Subscription (via Foxtel)",
+    "description": "Fox Sports Australia is the primary TV broadcaster for cricket and golf in Australia, available via Foxtel.",
+    "isFree": false,
+    "freeNote": null
+  },
+  {
+    "id": "channel-7",
+    "name": "Channel 7 / 7plus",
+    "website": "https://7plus.com.au",
+    "type": "Free-to-air TV",
+    "countries": [
+      "australia"
+    ],
+    "sports": [
+      "cricket"
+    ],
+    "price": "Free",
+    "description": "Channel 7 and its digital platform 7plus broadcast selected free-to-air cricket matches in Australia, including most Big Bash League games.",
+    "isFree": true,
+    "freeNote": "Free-to-air, no subscription required. Covers most Big Bash League matches."
+  },
+  {
+    "id": "ten-sports-pk",
+    "name": "Ten Sports Pakistan",
+    "website": "https://www.tensports.com",
+    "type": "TV",
+    "countries": [
+      "pakistan"
+    ],
+    "sports": [
+      "cricket"
+    ],
+    "price": "Subscription (cable)",
+    "description": "Ten Sports is a major cricket broadcaster in Pakistan, carrying PSL and other major tournaments.",
+    "isFree": false,
+    "freeNote": null
+  },
+  {
+    "id": "tapmad",
+    "name": "Tapmad TV",
+    "website": "https://www.tapmad.com",
+    "type": "Streaming",
+    "countries": [
+      "pakistan"
+    ],
+    "sports": [
+      "cricket"
+    ],
+    "price": "Free + Premium",
+    "description": "Tapmad TV is a Pakistan-based streaming platform offering free and premium live cricket coverage, including PSL.",
+    "isFree": true,
+    "freeNote": "Free tier available with ads; premium removes ads and unlocks extra features"
+  },
+  {
+    "id": "ptv-sports",
+    "name": "PTV Sports",
+    "website": "https://www.ptv.com.pk",
+    "type": "Free-to-air TV",
+    "countries": [
+      "pakistan"
+    ],
+    "sports": [
+      "cricket"
+    ],
+    "price": "Free",
+    "description": "PTV Sports is Pakistan's national free-to-air sports channel, broadcasting major cricket tournaments.",
+    "isFree": true,
+    "freeNote": "Free-to-air national broadcaster, no subscription required"
+  },
+  {
+    "id": "supersport",
+    "name": "SuperSport",
+    "website": "https://supersport.com",
+    "type": "TV + Streaming",
+    "countries": [
+      "south-africa"
+    ],
+    "sports": [
+      "cricket",
+      "football"
+    ],
+    "price": "Subscription (via DStv)",
+    "description": "SuperSport is the leading sports broadcaster across Sub-Saharan Africa, covering cricket, football and more, available via DStv.",
+    "isFree": false,
+    "freeNote": null
+  },
+  {
+    "id": "prime-video",
+    "name": "Prime Video",
+    "website": "https://www.primevideo.com",
+    "type": "Streaming",
+    "countries": [
+      "australia",
+      "south-africa",
+      "uk",
+      "usa",
+      "india"
+    ],
+    "sports": [
+      "cricket",
+      "basketball",
+      "golf"
+    ],
+    "price": "Varies (free for select events)",
+    "description": "Prime Video streams a growing range of live sports globally, including the NBA, WNBA, golf majors, and select cricket tournaments such as the ICC Women's T20 World Cup, sometimes for free.",
+    "isFree": false,
+    "freeNote": "Free for select events like the ICC Women's T20 World Cup in Australia and South Africa, but generally requires a Prime subscription"
+  },
+  {
+    "id": "espn-foxtel",
+    "name": "ESPN via Foxtel",
+    "website": "https://www.foxtel.com.au",
+    "type": "TV + Streaming",
+    "countries": [
+      "australia"
+    ],
+    "sports": [
+      "basketball"
+    ],
+    "price": "Subscription",
+    "description": "ESPN's NBA and WNBA coverage is available in Australia through Foxtel and the Kayo Sports streaming platform.",
+    "isFree": false,
+    "freeNote": null
+  },
+  {
+    "id": "nba-league-pass",
+    "name": "NBA League Pass",
+    "website": "https://www.nba.com/league-pass-purchase",
+    "type": "Streaming",
+    "countries": [
+      "india",
+      "uk",
+      "australia",
+      "usa"
+    ],
+    "sports": [
+      "basketball"
+    ],
+    "price": "Varies by country (from $19.99/year in India)",
+    "description": "NBA League Pass is the official global streaming service for live and on-demand NBA games, with pricing that varies significantly by country.",
+    "isFree": false,
+    "freeNote": null
+  },
+  {
+    "id": "youtube-nba",
+    "name": "YouTube (NBA Free Games)",
+    "website": "https://www.youtube.com/nba",
+    "type": "Free Streaming",
+    "countries": [
+      "india"
+    ],
+    "sports": [
+      "basketball"
+    ],
+    "price": "Free",
+    "description": "The NBA's official YouTube channel streams select games for free in India during the regular season and playoffs.",
+    "isFree": true,
+    "freeNote": "Select games only, not full season coverage"
+  },
+  {
+    "id": "tnt-sports-wnba",
+    "name": "TNT Sports (WNBA)",
+    "website": "https://www.tntsports.co.uk",
+    "type": "TV + Streaming",
+    "countries": [
+      "uk"
+    ],
+    "sports": [
+      "basketball"
+    ],
+    "price": "Subscription",
+    "description": "TNT Sports holds exclusive UK rights to WNBA regular season games, the All-Star Game, playoffs and Finals.",
+    "isFree": false,
+    "freeNote": null
+  },
+  {
+    "id": "espn-plus-golf",
+    "name": "ESPN+",
+    "website": "https://plus.espn.com",
+    "type": "Streaming",
+    "countries": [
+      "usa"
+    ],
+    "sports": [
+      "golf",
+      "basketball"
+    ],
+    "price": "Subscription",
+    "description": "ESPN+ streams early-round coverage of golf majors and select NBA/WNBA games in the USA.",
+    "isFree": false,
+    "freeNote": null
+  },
+  {
+    "id": "cbs-sports",
+    "name": "CBS Sports / Paramount+",
+    "website": "https://www.paramountplus.com",
+    "type": "TV + Streaming",
+    "countries": [
+      "usa"
+    ],
+    "sports": [
+      "golf"
+    ],
+    "price": "Subscription (Paramount+)",
+    "description": "CBS broadcasts weekend rounds of the Masters and other PGA Tour majors, with early streaming coverage on Paramount+.",
+    "isFree": false,
+    "freeNote": null
+  },
+  {
+    "id": "fox-sports-usa",
+    "name": "FOX Sports",
+    "website": "https://www.foxsports.com",
+    "type": "TV + Streaming",
+    "countries": [
+      "usa"
+    ],
+    "sports": [
+      "football"
+    ],
+    "price": "Subscription (cable) / FOX One app",
+    "description": "FOX Sports holds US broadcast rights to major football events including FIFA World Cup and UEFA EURO.",
+    "isFree": false,
+    "freeNote": null
+  },
+  {
+    "id": "nbc-sports",
+    "name": "NBC Sports",
+    "website": "https://www.nbcsports.com",
+    "type": "TV + Streaming",
+    "countries": [
+      "usa"
+    ],
+    "sports": [
+      "f1"
+    ],
+    "price": "Subscription (Peacock)",
+    "description": "NBC Sports broadcasts IndyCar Series races in the USA, with streaming available via Peacock.",
+    "isFree": false,
+    "freeNote": null
+  },
+  {
+    "id": "cbs-sports-formulae",
+    "name": "CBS Sports",
+    "website": "https://www.cbssports.com",
+    "type": "TV + Streaming",
+    "countries": [
+      "usa"
+    ],
+    "sports": [
+      "f1"
+    ],
+    "price": "Subscription (Paramount+)",
+    "description": "CBS Sports broadcasts Formula E races in the USA, with streaming available via Paramount+.",
+    "isFree": false,
+    "freeNote": null
   }
 ]
