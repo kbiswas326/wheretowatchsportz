@@ -441,10 +441,10 @@ img { max-width: 100%; display: block; }
 }
 
 /* === HOME HERO === */
-.home-hero { padding: 60px 2rem 100px; }
+.home-hero { padding: 0; }
 .home-hero-inner {
   max-width: 1200px; margin: 0 auto;
-  padding: 70px 20px 60px;
+  padding: 80px 40px 60px;
   position: relative; z-index: 1;
 }
 .home-title {
@@ -600,8 +600,7 @@ img { max-width: 100%; display: block; }
   .home-title { font-size: clamp(2.4rem, 11vw, 3.2rem); line-height: 1.15; letter-spacing: -0.5px; }
 
   /* Home hero mobile alignment fixes */
-  .home-hero { padding: 0; }
-  .home-hero-inner { padding: 80px 20px 60px; }
+  .home-hero-inner { padding: 80px 20px 50px; }
   .hero-search { max-width: 100%; }
   .hero-search input { width: 100%; font-size: 0.9rem; }
   .hero-badges { max-width: 100%; }
