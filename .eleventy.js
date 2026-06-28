@@ -1,5 +1,13 @@
 module.exports = function(eleventyConfig) {
 
+  eleventyConfig.addFilter("countryName", function(code) {
+    if (!code) return "";
+    return code
+      .split("-")
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+  });
+
   eleventyConfig.addPassthroughCopy({
     "wtws/public/css": "css"
   });
