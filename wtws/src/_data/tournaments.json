@@ -1,4 +1,4 @@
-[
+
   {
     "id": "ipl",
     "name": "Indian Premier League",
@@ -15,10 +15,17 @@
       },
       "usa": {
         "streaming": "Willow TV"
+      },
+      "australia": {
+        "streaming": "Kayo Sports",
+        "tv": "Fox Cricket"
+      },
+      "south-africa": {
+        "streaming": "SuperSport",
+        "tv": "SuperSport"
       }
     }
   },
-
   {
     "id": "t20-world-cup",
     "name": "ICC T20 World Cup",
@@ -34,10 +41,21 @@
       },
       "usa": {
         "streaming": "Willow TV"
+      },
+      "australia": {
+        "streaming": "Kayo Sports",
+        "tv": "Fox Cricket"
+      },
+      "pakistan": {
+        "streaming": "Tapmad TV",
+        "tv": "PTV Sports"
+      },
+      "south-africa": {
+        "streaming": "SuperSport",
+        "tv": "SuperSport"
       }
     }
   },
-
   {
     "id": "champions-trophy",
     "name": "ICC Champions Trophy",
@@ -53,10 +71,21 @@
       },
       "usa": {
         "streaming": "Willow TV"
+      },
+      "australia": {
+        "streaming": "Kayo Sports",
+        "tv": "Fox Cricket"
+      },
+      "pakistan": {
+        "streaming": "Tapmad TV",
+        "tv": "PTV Sports"
+      },
+      "south-africa": {
+        "streaming": "SuperSport",
+        "tv": "SuperSport"
       }
     }
   },
-
   {
     "id": "ashes",
     "name": "The Ashes",
@@ -72,481 +101,678 @@
       },
       "usa": {
         "streaming": "Willow TV"
+      },
+      "australia": {
+        "streaming": "Kayo Sports",
+        "tv": "Fox Cricket"
       }
     }
   },
-
-
-{
-  "id": "psl",
-  "name": "Pakistan Super League",
-  "sport": "cricket",
-  "season": "2026",
-  "description": "The Pakistan Super League is Pakistan's premier T20 cricket competition.",
-  "broadcasts": {
-    "india": { "streaming": "FanCode" },
-    "uk": { "streaming": "Sky Sports" },
-    "usa": { "streaming": "Willow TV" }
-  }
-},
-{
-  "id": "bbl",
-  "name": "Big Bash League",
-  "sport": "cricket",
-  "season": "2026",
-  "description": "Australia's leading T20 cricket competition.",
-  "broadcasts": {
-    "india": { "streaming": "FanCode" },
-    "uk": { "streaming": "Sky Sports" },
-    "usa": { "streaming": "Willow TV" }
-  }
-},
-{
-  "id": "sa20",
-  "name": "SA20",
-  "sport": "cricket",
-  "season": "2026",
-  "description": "South Africa's premier franchise T20 league.",
-  "broadcasts": {
-    "india": { "streaming": "JioHotstar" },
-    "uk": { "streaming": "Sky Sports" },
-    "usa": { "streaming": "Willow TV" }
-  }
-},
-{
-  "id": "mlc",
-  "name": "Major League Cricket",
-  "sport": "cricket",
-  "season": "2026",
-  "description": "The leading professional T20 cricket league in the United States.",
-  "broadcasts": {
-    "india": { "streaming": "JioHotstar" },
-    "uk": { "streaming": "Sky Sports" },
-    "usa": { "streaming": "Willow TV" }
-  }
-},
-{
-  "id": "asia-cup",
-  "name": "Asia Cup",
-  "sport": "cricket",
-  "season": "2027",
-  "description": "The Asia Cup features the top cricket nations from Asia.",
-  "broadcasts": {
-    "india": { "streaming": "JioHotstar" },
-    "uk": { "streaming": "Sky Sports" },
-    "usa": { "streaming": "Willow TV" }
-  }
-},
-{
-  "id": "the-hundred",
-  "name": "The Hundred",
-  "sport": "cricket",
-  "season": "2026",
-  "description": "England's 100-ball cricket competition featuring city-based franchises.",
-  "broadcasts": {
-    "india": { "streaming": "SonyLIV" },
-    "uk": { "streaming": "Sky Sports" },
-    "usa": { "streaming": "Willow TV" }
-  }
-},
-{
-  "id": "fifa-world-cup",
-  "name": "FIFA World Cup",
-  "sport": "football",
-  "season": "2026",
-  "description": "The FIFA World Cup is the world's premier international football tournament featuring 48 national teams.",
-  "broadcasts": {
-    "india": {
-      "streaming": "ZEE5",
-      "tv": "Unite8 Sports"
-    },
-    "uk": {
-      "streaming": "BBC iPlayer"
-    },
-    "usa": {
-      "streaming": "FOX Sports"
+  {
+    "id": "psl",
+    "name": "Pakistan Super League",
+    "sport": "cricket",
+    "season": "2026",
+    "description": "The Pakistan Super League is Pakistan's premier T20 cricket competition.",
+    "broadcasts": {
+      "india": {
+        "streaming": "FanCode"
+      },
+      "uk": {
+        "streaming": "Sky Sports"
+      },
+      "usa": {
+        "streaming": "Willow TV"
+      },
+      "pakistan": {
+        "streaming": "Tapmad TV",
+        "tv": "PTV Sports"
+      }
+    }
+  },
+  {
+    "id": "bbl",
+    "name": "Big Bash League",
+    "sport": "cricket",
+    "season": "2026",
+    "description": "Australia's leading T20 cricket competition.",
+    "broadcasts": {
+      "india": {
+        "streaming": "FanCode"
+      },
+      "uk": {
+        "streaming": "Sky Sports"
+      },
+      "usa": {
+        "streaming": "Willow TV"
+      },
+      "australia": {
+        "streaming": "Kayo Sports",
+        "tv": "Channel 7 / 7plus"
+      }
+    }
+  },
+  {
+    "id": "sa20",
+    "name": "SA20",
+    "sport": "cricket",
+    "season": "2026",
+    "description": "South Africa's premier franchise T20 league.",
+    "broadcasts": {
+      "india": {
+        "streaming": "JioHotstar"
+      },
+      "uk": {
+        "streaming": "Sky Sports"
+      },
+      "usa": {
+        "streaming": "Willow TV"
+      },
+      "south-africa": {
+        "streaming": "SuperSport",
+        "tv": "SuperSport"
+      }
+    }
+  },
+  {
+    "id": "mlc",
+    "name": "Major League Cricket",
+    "sport": "cricket",
+    "season": "2026",
+    "description": "The leading professional T20 cricket league in the United States.",
+    "broadcasts": {
+      "india": {
+        "streaming": "JioHotstar"
+      },
+      "uk": {
+        "streaming": "Sky Sports"
+      },
+      "usa": {
+        "streaming": "Willow TV"
+      }
+    }
+  },
+  {
+    "id": "asia-cup",
+    "name": "Asia Cup",
+    "sport": "cricket",
+    "season": "2027",
+    "description": "The Asia Cup features the top cricket nations from Asia.",
+    "broadcasts": {
+      "india": {
+        "streaming": "JioHotstar"
+      },
+      "uk": {
+        "streaming": "Sky Sports"
+      },
+      "usa": {
+        "streaming": "Willow TV"
+      },
+      "pakistan": {
+        "streaming": "Tapmad TV",
+        "tv": "PTV Sports"
+      }
+    }
+  },
+  {
+    "id": "the-hundred",
+    "name": "The Hundred",
+    "sport": "cricket",
+    "season": "2026",
+    "description": "England's 100-ball cricket competition featuring city-based franchises.",
+    "broadcasts": {
+      "india": {
+        "streaming": "SonyLIV"
+      },
+      "uk": {
+        "streaming": "Sky Sports"
+      },
+      "usa": {
+        "streaming": "Willow TV"
+      }
+    }
+  },
+  {
+    "id": "fifa-world-cup",
+    "name": "FIFA World Cup",
+    "sport": "football",
+    "season": "2026",
+    "description": "The FIFA World Cup is the world's premier international football tournament featuring 48 national teams.",
+    "broadcasts": {
+      "india": {
+        "streaming": "ZEE5",
+        "tv": "Unite8 Sports"
+      },
+      "uk": {
+        "streaming": "BBC iPlayer"
+      },
+      "usa": {
+        "streaming": "FOX Sports"
+      }
+    }
+  },
+  {
+    "id": "euros",
+    "name": "UEFA European Championship",
+    "sport": "football",
+    "season": "2028",
+    "description": "The UEFA European Championship is the premier international football tournament for European national teams.",
+    "broadcasts": {
+      "india": {
+        "streaming": "ZEE5"
+      },
+      "uk": {
+        "streaming": "BBC iPlayer"
+      },
+      "usa": {
+        "streaming": "FOX Sports"
+      }
+    }
+  },
+  {
+    "id": "copa-america",
+    "name": "Copa Am\u00e9rica",
+    "sport": "football",
+    "season": "2027",
+    "description": "The Copa Am\u00e9rica is the main international football tournament for South American national teams.",
+    "broadcasts": {
+      "india": {
+        "streaming": "SonyLIV"
+      },
+      "uk": {
+        "streaming": "TNT Sports"
+      },
+      "usa": {
+        "streaming": "Paramount+"
+      }
+    }
+  },
+  {
+    "id": "africa-cup-of-nations",
+    "name": "Africa Cup of Nations",
+    "sport": "football",
+    "season": "2027",
+    "description": "The Africa Cup of Nations is the premier international football tournament for African national teams.",
+    "broadcasts": {
+      "india": {
+        "streaming": "SonyLIV"
+      },
+      "uk": {
+        "streaming": "TNT Sports"
+      },
+      "usa": {
+        "streaming": "Paramount+"
+      }
+    }
+  },
+  {
+    "id": "afc-asian-cup",
+    "name": "AFC Asian Cup",
+    "sport": "football",
+    "season": "2027",
+    "description": "The AFC Asian Cup is the premier international football tournament for Asian national teams.",
+    "broadcasts": {
+      "india": {
+        "streaming": "SonyLIV"
+      },
+      "uk": {
+        "streaming": "TNT Sports"
+      },
+      "usa": {
+        "streaming": "Paramount+"
+      }
+    }
+  },
+  {
+    "id": "premier-league",
+    "name": "Premier League",
+    "sport": "football",
+    "season": "2026",
+    "description": "The Premier League is England's top professional football league and one of the most watched sports competitions in the world.",
+    "broadcasts": {
+      "india": {
+        "streaming": "JioHotstar"
+      },
+      "uk": {
+        "streaming": "Sky Sports"
+      },
+      "usa": {
+        "streaming": "Peacock"
+      },
+      "australia": {
+        "streaming": "Kayo Sports",
+        "tv": "Fox Sports Australia"
+      }
+    }
+  },
+  {
+    "id": "champions-league",
+    "name": "UEFA Champions League",
+    "sport": "football",
+    "season": "2026",
+    "description": "The UEFA Champions League is Europe's premier club football competition featuring the top teams from across the continent.",
+    "broadcasts": {
+      "india": {
+        "streaming": "SonyLIV"
+      },
+      "uk": {
+        "streaming": "TNT Sports"
+      },
+      "usa": {
+        "streaming": "Paramount+"
+      },
+      "australia": {
+        "streaming": "Kayo Sports",
+        "tv": "Fox Sports Australia"
+      }
+    }
+  },
+  {
+    "id": "la-liga",
+    "name": "La Liga",
+    "sport": "football",
+    "season": "2026",
+    "description": "La Liga is Spain's top professional football league and features some of the best teams and players in the world.",
+    "broadcasts": {
+      "india": {
+        "streaming": "SonyLIV"
+      },
+      "uk": {
+        "streaming": "Sky Sports"
+      },
+      "usa": {
+        "streaming": "Paramount+"
+      }
+    }
+  },
+  {
+    "id": "bundesliga",
+    "name": "Bundesliga",
+    "sport": "football",
+    "season": "2026",
+    "description": "The Bundesliga is Germany's top professional football league and features some of the best teams and players in the world.",
+    "broadcasts": {
+      "india": {
+        "streaming": "SonyLIV"
+      },
+      "uk": {
+        "streaming": "Sky Sports"
+      },
+      "usa": {
+        "streaming": "Paramount+"
+      }
+    }
+  },
+  {
+    "id": "serie-a",
+    "name": "Serie A",
+    "sport": "football",
+    "season": "2026",
+    "description": "Serie A is Italy's top professional football league and features some of the best teams and players in the world.",
+    "broadcasts": {
+      "india": {
+        "streaming": "SonyLIV"
+      },
+      "uk": {
+        "streaming": "Sky Sports"
+      },
+      "usa": {
+        "streaming": "Paramount+"
+      }
+    }
+  },
+  {
+    "id": "wimbledon",
+    "name": "Wimbledon",
+    "sport": "tennis",
+    "season": "2026",
+    "description": "Wimbledon is the world's oldest and most prestigious tennis tournament, played on grass courts in London.",
+    "broadcasts": {
+      "india": {
+        "streaming": "SonyLIV"
+      },
+      "uk": {
+        "streaming": "BBC iPlayer"
+      },
+      "usa": {
+        "streaming": "ESPN+"
+      }
+    }
+  },
+  {
+    "id": "us-open",
+    "name": "US Open",
+    "sport": "tennis",
+    "season": "2026",
+    "description": "The US Open is one of the four Grand Slam tennis tournaments, played on hard courts in New York City.",
+    "broadcasts": {
+      "india": {
+        "streaming": "SonyLIV"
+      },
+      "uk": {
+        "streaming": "BBC iPlayer"
+      },
+      "usa": {
+        "streaming": "ESPN+"
+      }
+    }
+  },
+  {
+    "id": "australian-open",
+    "name": "Australian Open",
+    "sport": "tennis",
+    "season": "2026",
+    "description": "The Australian Open is one of the four Grand Slam tennis tournaments, played on hard courts in Melbourne.",
+    "broadcasts": {
+      "india": {
+        "streaming": "SonyLIV"
+      },
+      "uk": {
+        "streaming": "BBC iPlayer"
+      },
+      "usa": {
+        "streaming": "ESPN+"
+      }
+    }
+  },
+  {
+    "id": "french-open",
+    "name": "French Open",
+    "sport": "tennis",
+    "season": "2026",
+    "description": "The French Open, also known as Roland Garros, is one of the four Grand Slam tennis tournaments, played on clay courts in Paris.",
+    "broadcasts": {
+      "india": {
+        "streaming": "SonyLIV"
+      },
+      "uk": {
+        "streaming": "BBC iPlayer"
+      },
+      "usa": {
+        "streaming": "ESPN+"
+      }
+    }
+  },
+  {
+    "id": "atp-finals",
+    "name": "ATP Finals",
+    "sport": "tennis",
+    "season": "2026",
+    "description": "The ATP Finals features the top eight men's singles players and doubles teams of the season.",
+    "broadcasts": {
+      "india": {
+        "streaming": "SonyLIV"
+      },
+      "uk": {
+        "streaming": "Sky Sports"
+      },
+      "usa": {
+        "streaming": "Tennis Channel"
+      }
+    }
+  },
+  {
+    "id": "formula-1-season",
+    "name": "Formula 1 World Championship",
+    "sport": "f1",
+    "season": "2026",
+    "description": "The FIA Formula One World Championship is the highest level of international motorsport competition.",
+    "broadcasts": {
+      "india": {
+        "streaming": "F1 TV Pro"
+      },
+      "uk": {
+        "streaming": "Sky Sports"
+      },
+      "usa": {
+        "streaming": "ESPN+"
+      },
+      "australia": {
+        "streaming": "Kayo Sports",
+        "tv": "Fox Sports Australia"
+      }
+    }
+  },
+  {
+    "id": "indycar-series",
+    "name": "IndyCar Series",
+    "sport": "f1",
+    "season": "2026",
+    "description": "The NTT IndyCar Series is the premier level of American open-wheel racing.",
+    "broadcasts": {
+      "india": {
+        "streaming": "FanCode"
+      },
+      "uk": {
+        "streaming": "Sky Sports"
+      },
+      "usa": {
+        "streaming": "NBC Sports"
+      }
+    }
+  },
+  {
+    "id": "formula-e",
+    "name": "Formula E",
+    "sport": "f1",
+    "season": "2026",
+    "description": "The ABB FIA Formula E World Championship is a class of motorsport that uses only electric-powered cars.",
+    "broadcasts": {
+      "india": {
+        "streaming": "FanCode"
+      },
+      "uk": {
+        "streaming": "Sky Sports"
+      },
+      "usa": {
+        "streaming": "CBS Sports"
+      }
+    }
+  },
+  {
+    "id": "monaco-gp",
+    "name": "Monaco Grand Prix",
+    "sport": "f1",
+    "season": "2026",
+    "description": "The Monaco Grand Prix is one of Formula 1's most iconic races, held on the streets of Monte Carlo.",
+    "broadcasts": {
+      "india": {
+        "streaming": "F1 TV Pro"
+      },
+      "uk": {
+        "streaming": "Sky Sports"
+      },
+      "usa": {
+        "streaming": "ESPN+"
+      },
+      "australia": {
+        "streaming": "Kayo Sports",
+        "tv": "Fox Sports Australia"
+      }
+    }
+  },
+  {
+    "id": "british-gp",
+    "name": "British Grand Prix",
+    "sport": "f1",
+    "season": "2026",
+    "description": "The British Grand Prix at Silverstone is one of the oldest and most celebrated races in Formula 1.",
+    "broadcasts": {
+      "india": {
+        "streaming": "F1 TV Pro"
+      },
+      "uk": {
+        "streaming": "Sky Sports"
+      },
+      "usa": {
+        "streaming": "ESPN+"
+      }
+    }
+  },
+  {
+    "id": "italian-gp",
+    "name": "Italian Grand Prix",
+    "sport": "f1",
+    "season": "2026",
+    "description": "The Italian Grand Prix at Monza is one of the fastest and most historic races on the Formula 1 calendar.",
+    "broadcasts": {
+      "india": {
+        "streaming": "F1 TV Pro"
+      },
+      "uk": {
+        "streaming": "Sky Sports"
+      },
+      "usa": {
+        "streaming": "ESPN+"
+      }
+    }
+  },
+  {
+    "id": "abu-dhabi-gp",
+    "name": "Abu Dhabi Grand Prix",
+    "sport": "f1",
+    "season": "2026",
+    "description": "The Abu Dhabi Grand Prix at Yas Marina Circuit traditionally concludes the Formula 1 season.",
+    "broadcasts": {
+      "india": {
+        "streaming": "F1 TV Pro"
+      },
+      "uk": {
+        "streaming": "Sky Sports"
+      },
+      "usa": {
+        "streaming": "ESPN+"
+      }
+    }
+  },
+  {
+    "id": "womens-t20-world-cup",
+    "name": "ICC Women's T20 World Cup",
+    "sport": "cricket",
+    "season": "2026",
+    "description": "The ICC Women's T20 World Cup 2026 is the 10th edition of the tournament, hosted in England and Wales with 12 teams, running June 12 to July 5, 2026, concluding with the final at Lord's.",
+    "broadcasts": {
+      "india": {
+        "streaming": "JioHotstar",
+        "tv": "Star Sports"
+      },
+      "uk": {
+        "streaming": "Sky Sports",
+        "tv": "Sky Sports",
+        "note": "All home nation group matches, both semi-finals and the final are free on the Sky Sports app without a subscription"
+      },
+      "usa": {
+        "streaming": "Willow TV",
+        "tv": "Willow TV"
+      },
+      "australia": {
+        "streaming": "Prime Video",
+        "tv": null,
+        "free": true,
+        "freeNote": "Prime Video streams every match free in Australia for this tournament \u2014 just an Amazon account, no subscription needed"
+      },
+      "south-africa": {
+        "streaming": "Prime Video",
+        "tv": "SuperSport",
+        "free": true,
+        "freeNote": "Prime Video streams every match free in South Africa for this tournament \u2014 just an Amazon account, no subscription needed"
+      },
+      "pakistan": {
+        "streaming": "Tapmad TV",
+        "tv": "PTV Sports"
+      }
+    }
+  },
+  {
+    "id": "nba",
+    "name": "NBA",
+    "sport": "basketball",
+    "season": "2025-26",
+    "description": "The National Basketball Association regular season, playoffs and NBA Finals, featuring the world's best basketball talent across 30 teams.",
+    "broadcasts": {
+      "usa": {
+        "streaming": "ESPN+",
+        "tv": "ESPN / ABC / NBC / Peacock"
+      },
+      "india": {
+        "streaming": "YouTube (NBA Free Games)",
+        "tv": null
+      },
+      "uk": {
+        "streaming": "Prime Video",
+        "tv": null
+      },
+      "australia": {
+        "streaming": "Kayo Sports",
+        "tv": "ESPN via Foxtel"
+      }
+    }
+  },
+  {
+    "id": "wnba",
+    "name": "WNBA",
+    "sport": "basketball",
+    "season": "2026",
+    "description": "The Women's National Basketball Association season, featuring 15 teams including new expansion franchises, with games distributed across Disney, NBCUniversal and Amazon Prime Video platforms.",
+    "broadcasts": {
+      "usa": {
+        "streaming": "Prime Video",
+        "tv": "ABC / ESPN / CBS"
+      },
+      "uk": {
+        "streaming": "TNT Sports (WNBA)",
+        "tv": "TNT Sports (WNBA)"
+      },
+      "australia": {
+        "streaming": "Prime Video",
+        "tv": null
+      }
+    }
+  },
+  {
+    "id": "the-masters",
+    "name": "The Masters",
+    "sport": "golf",
+    "season": "2026",
+    "description": "The Masters Tournament is golf's first major of the year, held annually at Augusta National Golf Club in Georgia, USA.",
+    "broadcasts": {
+      "usa": {
+        "streaming": "CBS Sports / Paramount+",
+        "tv": "ESPN / CBS"
+      },
+      "uk": {
+        "streaming": "Sky Sports",
+        "tv": "Sky Sports"
+      },
+      "australia": {
+        "streaming": "Kayo Sports",
+        "tv": "Fox Sports Australia"
+      },
+      "india": {
+        "streaming": "Prime Video",
+        "tv": null
+      }
+    }
+  },
+  {
+    "id": "pga-championship",
+    "name": "PGA Championship",
+    "sport": "golf",
+    "season": "2026",
+    "description": "The PGA Championship is one of golf's four major championships, organized by the PGA of America.",
+    "broadcasts": {
+      "usa": {
+        "streaming": "ESPN+",
+        "tv": "ESPN / CBS"
+      },
+      "uk": {
+        "streaming": "Sky Sports",
+        "tv": "Sky Sports"
+      },
+      "australia": {
+        "streaming": "Kayo Sports",
+        "tv": "Fox Sports Australia"
+      }
     }
   }
-},
-{
-  "id": "euros",
-  "name": "UEFA European Championship",
-  "sport": "football",
-  "season": "2028",
-  "description": "The UEFA European Championship is the premier international football tournament for European national teams.",
-  "broadcasts": {
-    "india": {
-      "streaming": "ZEE5"
-    },
-    "uk": {
-      "streaming": "BBC iPlayer"
-    },
-    "usa": {
-      "streaming": "FOX Sports"
-    }
-  }
-},
-{
-  "id": "copa-america",
-  "name": "Copa América",
-  "sport": "football",
-  "season": "2027",
-  "description": "The Copa América is the main international football tournament for South American national teams.",
-  "broadcasts": {
-    "india": {
-      "streaming": "SonyLIV"
-    },
-    "uk": {
-      "streaming": "TNT Sports"
-    },
-    "usa": {
-      "streaming": "Paramount+"
-    }
-  }
-},
-{
-  "id": "africa-cup-of-nations",
-  "name": "Africa Cup of Nations",
-  "sport": "football",
-  "season": "2027",
-  "description": "The Africa Cup of Nations is the premier international football tournament for African national teams.",
-  "broadcasts": {
-    "india": {
-      "streaming": "SonyLIV"
-    },
-    "uk": {
-      "streaming": "TNT Sports"
-    },
-    "usa": {
-      "streaming": "Paramount+"
-    }
-  }
-}, 
-{
-  "id": "afc-asian-cup",
-  "name": "AFC Asian Cup",
-  "sport": "football",
-  "season": "2027",
-  "description": "The AFC Asian Cup is the premier international football tournament for Asian national teams.",
-  "broadcasts": {
-    "india": {
-      "streaming": "SonyLIV"
-    },
-    "uk": {
-      "streaming": "TNT Sports"
-    },
-    "usa": {
-      "streaming": "Paramount+"
-    }
-  }
-},
-{
-  "id": "premier-league",
-  "name": "Premier League",
-  "sport": "football",
-  "season": "2026",
-  "description": "The Premier League is England's top professional football league and one of the most watched sports competitions in the world.",
-  "broadcasts": {
-    "india": {
-      "streaming": "JioHotstar"
-    },
-    "uk": {
-      "streaming": "Sky Sports"
-    },
-    "usa": {
-      "streaming": "Peacock"
-    }
-  }
-},
-{
-  "id": "champions-league",
-  "name": "UEFA Champions League",
-  "sport": "football",
-  "season": "2026",
-  "description": "The UEFA Champions League is Europe's premier club football competition featuring the top teams from across the continent.",
-  "broadcasts": {
-    "india": {
-      "streaming": "SonyLIV"
-    },
-    "uk": {
-      "streaming": "TNT Sports"
-    },
-    "usa": {
-      "streaming": "Paramount+"
-    }
-  }
-},
-{
-  "id": "la-liga",
-  "name": "La Liga",
-  "sport": "football",
-  "season": "2026",
-  "description": "La Liga is Spain's top professional football league and features some of the best teams and players in the world.",
-  "broadcasts": {
-    "india": {
-      "streaming": "SonyLIV"
-    },
-    "uk": {
-      "streaming": "Sky Sports"
-    },
-    "usa": {
-      "streaming": "Paramount+"
-    }
-  }
-},
-{
-  "id": "bundesliga",
-  "name": "Bundesliga",
-  "sport": "football",
-  "season": "2026",
-  "description": "The Bundesliga is Germany's top professional football league and features some of the best teams and players in the world.",
-  "broadcasts": {
-    "india": {
-      "streaming": "SonyLIV"
-    },
-    "uk": {
-      "streaming": "Sky Sports"
-    },
-    "usa": {
-      "streaming": "Paramount+"
-    }
-  }
-},
-{
-  "id": "serie-a",
-  "name": "Serie A",
-  "sport": "football",
-  "season": "2026",
-  "description": "Serie A is Italy's top professional football league and features some of the best teams and players in the world.",
-  "broadcasts": {
-    "india": {
-      "streaming": "SonyLIV"
-    },
-    "uk": {
-      "streaming": "Sky Sports"
-    },
-    "usa": {
-      "streaming": "Paramount+"
-    }
-  }
-},
-{
-  "id": "wimbledon",
-  "name": "Wimbledon",
-  "sport": "tennis",
-  "season": "2026",
-  "description": "Wimbledon is the world's oldest and most prestigious tennis tournament, played on grass courts in London.",
-  "broadcasts": {
-    "india": {
-      "streaming": "SonyLIV"
-    },
-    "uk": {
-      "streaming": "BBC iPlayer"
-    },
-    "usa": {
-      "streaming": "ESPN+"
-    }
-  }
-},
-{
-  "id": "us-open",
-  "name": "US Open",
-  "sport": "tennis",
-  "season": "2026",
-  "description": "The US Open is one of the four Grand Slam tennis tournaments, played on hard courts in New York City.",
-  "broadcasts": {
-    "india": {
-      "streaming": "SonyLIV"
-    },
-    "uk": {
-      "streaming": "BBC iPlayer"
-    },
-    "usa": {
-      "streaming": "ESPN+"
-    }
-  }
-},
-{
-  "id": "australian-open",
-  "name": "Australian Open",
-  "sport": "tennis",
-  "season": "2026",
-  "description": "The Australian Open is one of the four Grand Slam tennis tournaments, played on hard courts in Melbourne.",
-  "broadcasts": {
-    "india": {
-      "streaming": "SonyLIV"
-    },
-    "uk": {
-      "streaming": "BBC iPlayer"
-    },
-    "usa": {
-      "streaming": "ESPN+"
-    }
-  }
-},
-{
-  "id": "french-open",
-  "name": "French Open",
-  "sport": "tennis",
-  "season": "2026",
-  "description": "The French Open, also known as Roland Garros, is one of the four Grand Slam tennis tournaments, played on clay courts in Paris.",
-  "broadcasts": {
-    "india": {
-      "streaming": "SonyLIV"
-    },
-    "uk": {
-      "streaming": "BBC iPlayer"
-    },
-    "usa": {
-      "streaming": "ESPN+"
-    }
-  }
-},
-{
-  "id": "atp-finals",
-  "name": "ATP Finals",
-  "sport": "tennis",
-  "season": "2026",
-  "description": "The ATP Finals features the top eight men's singles players and doubles teams of the season.",
-  "broadcasts": {
-    "india": {
-      "streaming": "SonyLIV"
-    },
-    "uk": {
-      "streaming": "Sky Sports"
-    },
-    "usa": {
-      "streaming": "Tennis Channel"
-    }
-  }
-},
-{
-  "id": "formula-1-season",
-  "name": "Formula 1 World Championship",
-  "sport": "f1",
-  "season": "2026",
-  "description": "The FIA Formula One World Championship is the highest level of international motorsport competition.",
-  "broadcasts": {
-    "india": {
-      "streaming": "F1 TV Pro"
-    },
-    "uk": {
-      "streaming": "Sky Sports"
-    },
-    "usa": {
-      "streaming": "ESPN+"
-    }
-  }
-},
-
-{
-  "id": "indycar-series",
-  "name": "IndyCar Series",
-  "sport": "f1",
-  "season": "2026",
-  "description": "The NTT IndyCar Series is the premier level of American open-wheel racing.",
-  "broadcasts": {
-    "india": {
-      "streaming": "FanCode"
-    },
-    "uk": {
-      "streaming": "Sky Sports"
-    },
-    "usa": {
-      "streaming": "NBC Sports"
-    }
-  }
-},
-
-{
-  "id": "formula-e",
-  "name": "Formula E",
-  "sport": "f1",
-  "season": "2026",
-  "description": "The ABB FIA Formula E World Championship is a class of motorsport that uses only electric-powered cars.",
-  "broadcasts": {
-    "india": {
-      "streaming": "FanCode"
-    },
-    "uk": {
-      "streaming": "Sky Sports"
-    },
-    "usa": {
-      "streaming": "CBS Sports"
-    }
-  }
-},
-{
-  "id": "monaco-gp",
-  "name": "Monaco Grand Prix",
-  "sport": "f1",
-  "season": "2026",
-  "description": "The Monaco Grand Prix is one of Formula 1's most iconic races, held on the streets of Monte Carlo.",
-  "broadcasts": {
-    "india": {
-      "streaming": "F1 TV Pro"
-    },
-    "uk": {
-      "streaming": "Sky Sports"
-    },
-    "usa": {
-      "streaming": "ESPN+"
-    }
-  }
-},
-{
-  "id": "british-gp",
-  "name": "British Grand Prix",
-  "sport": "f1",
-  "season": "2026",
-  "description": "The British Grand Prix at Silverstone is one of the oldest and most celebrated races in Formula 1.",
-  "broadcasts": {
-    "india": {
-      "streaming": "F1 TV Pro"
-    },
-    "uk": {
-      "streaming": "Sky Sports"
-    },
-    "usa": {
-      "streaming": "ESPN+"
-    }
-  }
-},
-{
-  "id": "italian-gp",
-  "name": "Italian Grand Prix",
-  "sport": "f1",
-  "season": "2026",
-  "description": "The Italian Grand Prix at Monza is one of the fastest and most historic races on the Formula 1 calendar.",
-  "broadcasts": {
-    "india": {
-      "streaming": "F1 TV Pro"
-    },
-    "uk": {
-      "streaming": "Sky Sports"
-    },
-    "usa": {
-      "streaming": "ESPN+"
-    }
-  }
-},
-{
-  "id": "abu-dhabi-gp",
-  "name": "Abu Dhabi Grand Prix",
-  "sport": "f1",
-  "season": "2026",
-  "description": "The Abu Dhabi Grand Prix at Yas Marina Circuit traditionally concludes the Formula 1 season.",
-  "broadcasts": {
-    "india": {
-      "streaming": "F1 TV Pro"
-    },
-    "uk": {
-      "streaming": "Sky Sports"
-    },
-    "usa": {
-      "streaming": "ESPN+"
-    }
-  }
-}
-  
 ]
