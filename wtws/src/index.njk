@@ -91,7 +91,7 @@ permalink: /
           <div class="card-desc">{{ platform.freeNote or platform.description }}</div>
           <div class="card-platforms">
             {% for country in platform.countries %}
-              <span>{{ country | capitalize }}</span>
+              <span>{{ country | countryName }}</span>
             {% endfor %}
           </div>
         </div>
