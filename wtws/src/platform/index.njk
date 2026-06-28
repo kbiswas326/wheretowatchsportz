@@ -1,0 +1,87 @@
+---
+layout: ../layouts/base.njk
+title: Sports Streaming Platforms - Where to Watch Sports Worldwide
+description: Browse all sports streaming platforms and TV channels. Find where to watch cricket, football, F1, tennis and more in your country.
+permalink: /platform/
+---
+
+<header class="sport-hero">
+  <div class="sport-hero-inner">
+
+    <div class="hero-eyebrow">
+      PLATFORMS
+    </div>
+
+    <h1 class="sport-hero-title">
+      Streaming Platforms
+    </h1>
+
+    <p class="sport-hero-sub">
+      Find every sports streaming service and TV channel — by country, sport and price.
+    </p>
+
+  </div>
+</header>
+
+<main class="sport-main">
+
+<section class="stream-section">
+
+  <div class="section-label">FREE TO WATCH</div>
+  <h2>Free Platforms</h2>
+
+  <div class="card-grid">
+    {% for platform in platforms %}
+      {% if platform.isFree %}
+      <a href="/platform/{{ platform.id }}/" class="sport-card">
+        <div class="card-sport-icon">🆓</div>
+        <div class="card-body">
+          <div class="card-tag">FREE · {{ platform.type }}</div>
+          <div class="card-title">{{ platform.name }}</div>
+          <div class="card-desc">{{ platform.freeNote or platform.description }}</div>
+          <div class="card-platforms">
+            {% for country in platform.countries %}
+              <span>{{ country | countryName }}</span>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</section>
+
+<section class="stream-section">
+
+  <div class="section-label">SUBSCRIPTION</div>
+  <h2>Paid Platforms</h2>
+
+  <div class="card-grid">
+    {% for platform in platforms %}
+      {% if not platform.isFree %}
+      <a href="/platform/{{ platform.id }}/" class="sport-card">
+        <div class="card-sport-icon">📺</div>
+        <div class="card-body">
+          <div class="card-tag">PAID · {{ platform.type }}</div>
+          <div class="card-title">{{ platform.name }}</div>
+          <div class="card-desc">{{ platform.description }}</div>
+          <div class="card-platforms">
+            {% for country in platform.countries %}
+              <span>{{ country | countryName }}</span>
+            {% endfor %}
+            {% if platform.price %}
+              <span>{{ platform.price }}</span>
+            {% endif %}
+          </div>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</section>
+
+</main>
