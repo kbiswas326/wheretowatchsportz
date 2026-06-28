@@ -9,46 +9,100 @@ pagination:
 permalink: "platform/{{ platform.id }}/index.html"
 
 eleventyComputed:
-  title: "{{ platform.name }} — Sports Streaming Guide"
-  description: "Find out which sports you can watch on {{ platform.name }}. Pricing, regions, and full sports coverage breakdown."
+  title: "{{ platform.name }} Sports Streaming Guide"
+  description: "{{ platform.description }}"
 ---
 
 <header class="sport-hero">
   <div class="sport-hero-inner">
-    <div class="hero-eyebrow">Streaming Platform</div>
-    <h1 class="sport-hero-title">{{ platform.name }}</h1>
-    <p class="sport-hero-sub">{{ platform.region }} · {{ platform.price }}</p>
+
+    <div class="hero-eyebrow">
+      Streaming Platform
+    </div>
+
+    <h1 class="sport-hero-title">
+      {{ platform.name }}
+    </h1>
+
+    <p class="sport-hero-sub">
+      {{ platform.description }}
+    </p>
+
   </div>
 </header>
 
 <main class="sport-main">
 
-  <section class="stream-section">
-    <div class="section-label">Overview</div>
-    <p>{{ platform.name }} is a sports streaming platform available in {{ platform.region }}. {% if platform.free %}A free tier is available.{% endif %}</p>
-  </section>
+<section class="stream-section">
 
-  <section class="stream-section">
-    <div class="section-label">Sports Covered</div>
-    <ul>
-      {% for sport in platform.sports %}
-      <li>{{ sport }}</li>
-      {% endfor %}
-    </ul>
-  </section>
+<div class="section-label">
+Platform Information
+</div>
 
-  {% if platform.notes %}
-  <section class="stream-section">
-    <div class="section-label">Notes</div>
-    <p>{{ platform.notes }}</p>
-  </section>
-  {% endif %}
+<p>
+Type: {{ platform.type }}
+</p>
 
-  <section class="stream-section">
-    <div class="section-label">Visit Platform</div>
-    <a class="stream-cta" href="{{ platform.url }}" target="_blank" rel="noopener nofollow">
-      Go to {{ platform.name }} →
-    </a>
-  </section>
+<p>
+Price: {{ platform.price }}
+</p>
+
+<span class="stream-price {% if platform.isFree %}free-tag{% else %}paid-tag{% endif %}">
+  {% if platform.isFree %}FREE{% else %}PAID{% endif %}
+</span>
+
+{% if platform.isFree and platform.freeNote %}
+<p class="free-note">
+  {{ platform.freeNote }}
+</p>
+{% endif %}
+
+<p>
+Available in:
+{% for c in platform.countries %}{{ c | countryName }}{% if not loop.last %}, {% endif %}{% endfor %}
+</p>
+
+</section>
+
+<section class="stream-section">
+
+<h2>Sports Covered</h2>
+
+<ul>
+{% for sport in platform.sports %}
+<li>{{ sport }}</li>
+{% endfor %}
+</ul>
+</section>
+
+<section class="stream-section">
+
+<div class="section-label">
+Popular Tournaments
+</div>
+
+<ul>
+
+{% for tournament in tournaments %}
+
+{% for country, info in tournament.broadcasts %}
+
+{% if info.streaming == platform.name %}
+
+<li>
+<a href="/sport/{{ tournament.sport }}/{{ tournament.id }}/">
+{{ tournament.name }}
+</a>
+</li>
+
+{% endif %}
+
+{% endfor %}
+
+{% endfor %}
+
+</ul>
+
+</section>
 
 </main>
