@@ -44,30 +44,23 @@ eleventyComputed:
     official broadcasters and streaming platforms by country.
   </p>
 
-  <div class="stream-grid">
+  <div class="card-grid">
 
     {% for tournament in tournaments %}
 
       {% if tournament.sport == sport.id %}
 
-      <div class="stream-card">
-
-        <h3>
-          {{ tournament.name }}
-        </h3>
-
-        <p>
-          {{ tournament.description }}
-        </p>
-
-        <a
-          href="/sport/{{ sport.id }}/{{ tournament.id }}/"
-          class="stream-cta"
-        >
-          View Guide →
-        </a>
-
-      </div>
+      <a href="/sport/{{ sport.id }}/{{ tournament.id }}/" class="sport-card">
+        <div class="card-sport-icon">
+          {% if sport.id == "cricket" %}🏏{% elif sport.id == "football" %}⚽{% elif sport.id == "f1" %}🏁{% elif sport.id == "tennis" %}🎾{% elif sport.id == "basketball" %}🏀{% elif sport.id == "golf" %}⛳{% else %}🏆{% endif %}
+        </div>
+        <div class="card-body">
+          <div class="card-tag">{{ sport.name | upper }}</div>
+          <div class="card-title">{{ tournament.name }}</div>
+          <div class="card-desc">{{ tournament.description }}</div>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
 
       {% endif %}
 
