@@ -6,6 +6,9 @@ module.exports = tournaments.flatMap(tournament =>
     countryCode,
     platform: info.streaming,
     streaming: info.streaming,
-    tv: info.tv || null
+    tv: info.tv || null,
+    freeOverride: typeof info.free === "boolean" ? info.free : null,
+    freeNoteOverride: info.freeNote || null,
+    broadcastNote: info.note || null
   }))
 );
