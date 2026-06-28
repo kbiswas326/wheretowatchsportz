@@ -1,5 +1,5 @@
 ---
-title: Seattle Storm vs Atlanta Dream: WNBA Highlights — June 27
+title: "Seattle Storm vs Atlanta Dream - WNBA Highlights June 27"
 description: The Seattle Storm and Atlanta Dream met on June 27 in a WNBA regular season clash. Full game highlights available on ESPN.
 date: 2026-06-27
 layout: article.njk
