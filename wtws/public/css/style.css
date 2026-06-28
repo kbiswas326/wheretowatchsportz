@@ -475,7 +475,7 @@ img { max-width: 100%; display: block; }
 }
 
 /* === HOME HERO === */
-.home-hero { padding: 0; }
+.home-hero { padding: 0; position: relative; overflow: hidden; }
 .home-hero-inner {
   max-width: 1200px; margin: 0 auto;
   padding: 80px 40px 60px;
