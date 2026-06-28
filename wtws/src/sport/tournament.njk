@@ -52,27 +52,34 @@ Select your country below to see official streaming platforms and TV broadcaster
 Available Countries
 </h2>
 
-<ul class="country-list">
+<div class="card-grid">
 
 {% for countryCode, info in tournament.broadcasts %}
 
 {% set platformData = platformLookup[info.streaming] %}
 {% set isFreeHere = info.free if info.free !== undefined else (platformData.isFree if platformData else false) %}
 
-<li>
-  <a href="/sport/{{ tournament.sport }}/{{ tournament.id }}/{{ countryCode }}/">
-    {{ countryCode | countryName }}
-  </a>
-  {% if platformData %}
-  <span class="stream-price {% if isFreeHere %}free-tag{% else %}paid-tag{% endif %}">
-    {% if isFreeHere %}FREE{% else %}PAID{% endif %}
-  </span>
-  {% endif %}
-</li>
+<a href="/sport/{{ tournament.sport }}/{{ tournament.id }}/{{ countryCode }}/" class="sport-card">
+  <div class="card-sport-icon">🌍</div>
+  <div class="card-body">
+    <div class="card-tag">{{ tournament.sport | upper }}</div>
+    <div class="card-title">{{ countryCode | countryName }}</div>
+    <div class="card-platforms">
+      {% if platformData %}
+      <span class="stream-price {% if isFreeHere %}free-tag{% else %}paid-tag{% endif %}">
+        {% if isFreeHere %}FREE{% else %}PAID{% endif %}
+      </span>
+      <span>{{ info.streaming }}</span>
+      {% endif %}
+      {% if info.tv %}<span>📺 {{ info.tv }}</span>{% endif %}
+    </div>
+  </div>
+  <div class="card-arrow">→</div>
+</a>
 
 {% endfor %}
 
-</ul>
+</div>
 
 </section>
 
