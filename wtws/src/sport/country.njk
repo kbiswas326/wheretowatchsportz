@@ -9,8 +9,8 @@ pagination:
 permalink: "sport/{{ pageData.tournament.sport }}/{{ pageData.tournament.id }}/{{ pageData.countryCode }}/index.html"
 
 eleventyComputed:
-  title: "Where to Watch {{ pageData.tournament.name }} {{ pageData.tournament.season }} in {{ pageData.countryCode | capitalize }}"
-  description: "Watch {{ pageData.tournament.name }} live in {{ pageData.countryCode | capitalize }}. Find streaming services, TV channels and broadcast information."
+  title: "Where to Watch {{ pageData.tournament.name }} {{ pageData.tournament.season }} in {{ pageData.countryCode | countryName }}"
+  description: "Watch {{ pageData.tournament.name }} live in {{ pageData.countryCode | countryName }}. Find streaming services, TV channels and broadcast information."
 ---
 
 {% set platformData = platformLookup[pageData.platform] %}
@@ -38,7 +38,7 @@ eleventyComputed:
       <span>›</span>
 
       <span>
-        {{ pageData.countryCode | capitalize }}
+        {{ pageData.countryCode | countryName }}
       </span>
 
     </nav>
@@ -56,7 +56,7 @@ eleventyComputed:
 
       in
 
-      {{ pageData.countryCode | capitalize }}
+      {{ pageData.countryCode | countryName }}
     </h1>
 
     <p class="sport-hero-sub">
@@ -93,7 +93,7 @@ Streaming Information
 </div>
 
 <p>
-Fans in {{ pageData.countryCode | capitalize }} can watch
+Fans in {{ pageData.countryCode | countryName }} can watch
 <strong>{{ pageData.tournament.name }}</strong>
 live through
 
@@ -107,13 +107,22 @@ Coverage is also available on
 {% endif %}
 </p>
 
-<span class="stream-price {% if platformData.isFree %}free-tag{% else %}paid-tag{% endif %}">
-  {% if platformData.isFree %}FREE{% else %}PAID{% endif %}
+{% set isFreeHere = pageData.freeOverride if pageData.freeOverride !== null else platformData.isFree %}
+{% set freeNoteHere = pageData.freeNoteOverride or platformData.freeNote %}
+
+<span class="stream-price {% if isFreeHere %}free-tag{% else %}paid-tag{% endif %}">
+  {% if isFreeHere %}FREE{% else %}PAID{% endif %}
 </span>
 
-{% if platformData.isFree and platformData.freeNote %}
+{% if isFreeHere and freeNoteHere %}
 <p class="free-note">
-  {{ platformData.freeNote }}
+  {{ freeNoteHere }}
+</p>
+{% endif %}
+
+{% if pageData.broadcastNote %}
+<p class="free-note">
+  {{ pageData.broadcastNote }}
 </p>
 {% endif %}
 
@@ -130,7 +139,7 @@ About This Tournament
 </p>
 
 <p>
-This guide helps viewers in {{ pageData.countryCode | capitalize }}
+This guide helps viewers in {{ pageData.countryCode | countryName }}
 find official streaming options, television broadcasters and viewing
 information for {{ pageData.tournament.name }}.
 </p>
@@ -199,24 +208,24 @@ Frequently Asked Questions
 
   <div class="faq-item">
     <h3>
-      Where can I watch {{ pageData.tournament.name }} in {{ pageData.countryCode | capitalize }}?
+      Where can I watch {{ pageData.tournament.name }} in {{ pageData.countryCode | countryName }}?
     </h3>
 
     <p>
-      {{ platformData.name }} is the official streaming platform for this tournament in {{ pageData.countryCode | capitalize }}.
+      {{ platformData.name }} is the official streaming platform for this tournament in {{ pageData.countryCode | countryName }}.
     </p>
   </div>
 
   <div class="faq-item">
     <h3>
-      Is {{ pageData.tournament.name }} free to watch in {{ pageData.countryCode | capitalize }}?
+      Is {{ pageData.tournament.name }} free to watch in {{ pageData.countryCode | countryName }}?
     </h3>
 
     <p>
-      {% if platformData.isFree %}
-        Yes. {{ platformData.name }} {% if platformData.freeNote %}{{ platformData.freeNote | lower }}{% else %}offers free access to this coverage{% endif %}.
+      {% if isFreeHere %}
+        Yes. {{ platformData.name }} {% if freeNoteHere %}{{ freeNoteHere | lower }}{% else %}offers free access to this coverage{% endif %}.
       {% else %}
-        {{ platformData.name }} requires a paid subscription to watch this tournament in {{ pageData.countryCode | capitalize }}. Check the platform's website for current trial offers.
+        {{ platformData.name }} requires a paid subscription to watch this tournament in {{ pageData.countryCode | countryName }}. Check the platform's website for current trial offers.
       {% endif %}
     </p>
   </div>
