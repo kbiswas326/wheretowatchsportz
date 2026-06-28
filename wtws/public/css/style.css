@@ -67,7 +67,7 @@ img { max-width: 100%; display: block; }
   background: none; border: none;
   cursor: pointer; padding: 4px;
   line-height: 0;
-  margin-left: auto;
+  margin-left: 1.5rem;
 }
 
 /* === TICKER === */
@@ -563,14 +563,7 @@ img { max-width: 100%; display: block; }
 .author-card-credibility { font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #f5ff3c; font-weight: 500; margin-top: 0.3rem; }
 .author-card-bio { font-family: 'Inter', sans-serif; font-size: 0.88rem; color: #9ca3af; line-height: 1.5; margin-top: 0.4rem; }
 
-/* === MOBILE NAVIGATION === */
-.menu-toggle {
-  display: none;
-  background: none; border: none;
-  color: var(--accent);
-  font-size: 2rem; font-weight: 700;
-  cursor: pointer; line-height: 1; z-index: 1001;
-}
+/* === MOBILE MENU === */
 .mobile-menu {
   display: none; flex-direction: column;
   background: #111;
@@ -592,7 +585,7 @@ img { max-width: 100%; display: block; }
 @media (max-width: 768px) {
   .nav { padding: 16px 20px; }
   .nav-links { display: none; }
-  .menu-toggle { display: block; }
+  .nav-hamburger { display: block; }
   .nav-logo { font-size: 1.4rem; }
   .hero-inner { padding: 3rem 1.2rem 2.5rem; }
   .sports-section, .guides-section { padding: 3rem 1.2rem; }
