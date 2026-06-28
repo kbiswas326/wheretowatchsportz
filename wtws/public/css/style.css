@@ -354,6 +354,7 @@ img { max-width: 100%; display: block; }
 /* === SPORT HERO (for sport pages) === */
 .sport-hero {
   padding: 5rem 2rem 3.5rem;
+  border-bottom: 1px solid var(--border);
 }
 .cricket-hero  { background: linear-gradient(140deg, #060f06 0%, var(--black) 70%); }
 .football-hero { background: linear-gradient(140deg, #060a18 0%, var(--black) 70%); }
@@ -373,7 +374,7 @@ img { max-width: 100%; display: block; }
 }
 
 /* === STREAM CARDS (sport pages) === */
-.sport-main { max-width: 1100px; margin: 0 auto; padding: 4rem 2rem; }
+.sport-main { max-width: 1100px; margin: 0 auto; padding: 5rem 2rem; }
 .stream-section { margin-bottom: 5rem; }
 .stream-section .section-label { margin-bottom: 1rem; }
 .stream-section p,
