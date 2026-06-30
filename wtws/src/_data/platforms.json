@@ -345,7 +345,8 @@
     "website": "https://www.tapmad.com",
     "type": "Streaming",
     "countries": [
-      "pakistan"
+      "pakistan",
+      "bangladesh"
     ],
     "sports": [
       "cricket"
@@ -555,6 +556,76 @@
     ],
     "price": "Subscription (Paramount+)",
     "description": "CBS Sports broadcasts Formula E races in the USA, with streaming available via Paramount+.",
+    "isFree": false,
+    "freeNote": null
+  },
+  {
+    "id": "sky-sport-nz",
+    "name": "Sky Sport NZ",
+    "website": "https://www.skysport.co.nz",
+    "type": "TV + Streaming",
+    "countries": [
+      "new-zealand"
+    ],
+    "sports": [
+      "cricket",
+      "football",
+      "f1"
+    ],
+    "price": "Subscription",
+    "description": "Sky Sport is New Zealand's primary broadcaster for international cricket, football and F1.",
+    "isFree": false,
+    "freeNote": null
+  },
+  {
+    "id": "tsn",
+    "name": "TSN",
+    "website": "https://www.tsn.ca",
+    "type": "TV + Streaming",
+    "countries": [
+      "canada"
+    ],
+    "sports": [
+      "football",
+      "f1",
+      "basketball"
+    ],
+    "price": "Subscription",
+    "description": "TSN is Canada's leading sports network, carrying F1, FIFA tournaments and WNBA coverage.",
+    "isFree": false,
+    "freeNote": null
+  },
+  {
+    "id": "dazn-spain",
+    "name": "DAZN",
+    "website": "https://www.dazn.com/es-ES",
+    "type": "Streaming",
+    "countries": [
+      "spain"
+    ],
+    "sports": [
+      "football",
+      "f1"
+    ],
+    "price": "€9.99/month",
+    "description": "DAZN holds the rights to LaLiga, Premier League and F1 races in Spain.",
+    "isFree": false,
+    "freeNote": null
+  },
+  {
+    "id": "canal-plus",
+    "name": "Canal+",
+    "website": "https://www.canalplus.com",
+    "type": "TV + Streaming",
+    "countries": [
+      "france"
+    ],
+    "sports": [
+      "football",
+      "f1"
+    ],
+    "price": "Subscription",
+    "description": "Canal+ is the exclusive home of every F1 session and major football coverage in France.",
     "isFree": false,
     "freeNote": null
   }
