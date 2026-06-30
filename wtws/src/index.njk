@@ -103,15 +103,41 @@ permalink: /
 </section>
 
 <section class="sports-section">
-  <div class="section-label">FEATURED TOURNAMENTS</div>
-  <div class="section-title">Upcoming Events</div>
-  
+  <div class="section-label">LIVE NOW</div>
+  <div class="section-title">Ongoing Events</div>
+
   <div class="card-grid">
     {% for tournament in tournaments %}
-      {% if loop.index <= 4 %}
+      {% if tournament.status == "ongoing" %}
       <a href="/sport/{{ tournament.sport }}/{{ tournament.id }}/" class="sport-card">
         <div class="card-sport-icon">
-          {% if tournament.sport == "cricket" %}🏏{% elif tournament.sport == "football" %}⚽{% elif tournament.sport == "f1" %}🏁{% elif tournament.sport == "tennis" %}🎾{% else %}🏆{% endif %}
+          {% if tournament.sport == "cricket" %}🏏{% elif tournament.sport == "football" %}⚽{% elif tournament.sport == "f1" %}🏁{% elif tournament.sport == "tennis" %}🎾{% elif tournament.sport == "basketball" %}🏀{% elif tournament.sport == "golf" %}⛳{% else %}🏆{% endif %}
+        </div>
+        <div class="card-body">
+          <div class="card-tag">{{ tournament.sport | upper }}</div>
+          <div class="card-title">{{ tournament.name }}</div>
+          <div class="card-desc">{{ tournament.description }}</div>
+          <div class="card-platforms">
+            <span>Season {{ tournament.season }}</span>
+          </div>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="sports-section">
+  <div class="section-label">FEATURED TOURNAMENTS</div>
+  <div class="section-title">Upcoming Events</div>
+
+  <div class="card-grid">
+    {% for tournament in tournaments %}
+      {% if tournament.status == "upcoming" %}
+      <a href="/sport/{{ tournament.sport }}/{{ tournament.id }}/" class="sport-card">
+        <div class="card-sport-icon">
+          {% if tournament.sport == "cricket" %}🏏{% elif tournament.sport == "football" %}⚽{% elif tournament.sport == "f1" %}🏁{% elif tournament.sport == "tennis" %}🎾{% elif tournament.sport == "basketball" %}🏀{% elif tournament.sport == "golf" %}⛳{% else %}🏆{% endif %}
         </div>
         <div class="card-body">
           <div class="card-tag">{{ tournament.sport | upper }}</div>
