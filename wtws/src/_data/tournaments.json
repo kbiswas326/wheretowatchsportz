@@ -27,7 +27,8 @@
       "new-zealand": {
         "streaming": "Sky Sport NZ"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "t20-world-cup",
@@ -64,7 +65,8 @@
       "new-zealand": {
         "streaming": "Sky Sport NZ"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "champions-trophy",
@@ -101,7 +103,8 @@
       "new-zealand": {
         "streaming": "Sky Sport NZ"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "ashes",
@@ -126,7 +129,8 @@
       "new-zealand": {
         "streaming": "Sky Sport NZ"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "psl",
@@ -148,7 +152,8 @@
         "streaming": "Tapmad TV",
         "tv": "PTV Sports"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "bbl",
@@ -170,7 +175,8 @@
         "streaming": "Kayo Sports",
         "tv": "Channel 7 / 7plus"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "sa20",
@@ -192,7 +198,8 @@
         "streaming": "SuperSport",
         "tv": "SuperSport"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "mlc",
@@ -210,7 +217,8 @@
       "usa": {
         "streaming": "Willow TV"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "asia-cup",
@@ -236,7 +244,8 @@
         "streaming": "Tapmad TV",
         "tv": "T Sports"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "the-hundred",
@@ -254,7 +263,8 @@
       "usa": {
         "streaming": "Willow TV"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "fifa-world-cup",
@@ -286,7 +296,8 @@
         "streaming": "Canal+",
         "tv": "TF1"
       }
-    }
+    },
+    "status": "ongoing"
   },
   {
     "id": "euros",
@@ -316,7 +327,8 @@
         "streaming": "Canal+",
         "tv": "TF1"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "copa-america",
@@ -337,7 +349,8 @@
       "canada": {
         "streaming": "TSN"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "africa-cup-of-nations",
@@ -355,7 +368,8 @@
       "usa": {
         "streaming": "Paramount+"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "afc-asian-cup",
@@ -373,7 +387,8 @@
       "usa": {
         "streaming": "Paramount+"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "premier-league",
@@ -405,7 +420,8 @@
       "france": {
         "streaming": "Canal+"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "champions-league",
@@ -436,7 +452,8 @@
       "france": {
         "streaming": "Canal+"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "la-liga",
@@ -457,7 +474,8 @@
       "spain": {
         "streaming": "DAZN"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "bundesliga",
@@ -475,7 +493,8 @@
       "usa": {
         "streaming": "Paramount+"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "serie-a",
@@ -493,7 +512,8 @@
       "usa": {
         "streaming": "Paramount+"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "wimbledon",
@@ -511,7 +531,8 @@
       "usa": {
         "streaming": "ESPN+"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "us-open",
@@ -529,7 +550,8 @@
       "usa": {
         "streaming": "ESPN+"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "australian-open",
@@ -547,7 +569,8 @@
       "usa": {
         "streaming": "ESPN+"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "french-open",
@@ -565,7 +588,8 @@
       "usa": {
         "streaming": "ESPN+"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "atp-finals",
@@ -583,7 +607,8 @@
       "usa": {
         "streaming": "Tennis Channel"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "formula-1-season",
@@ -616,7 +641,8 @@
         "streaming": "Canal+",
         "tv": "C8"
       }
-    }
+    },
+    "status": "ongoing"
   },
   {
     "id": "indycar-series",
@@ -634,7 +660,8 @@
       "usa": {
         "streaming": "NBC Sports"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "formula-e",
@@ -652,7 +679,8 @@
       "usa": {
         "streaming": "CBS Sports"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "monaco-gp",
@@ -684,7 +712,8 @@
         "streaming": "Canal+",
         "tv": "C8"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "british-gp",
@@ -705,7 +734,8 @@
       "canada": {
         "streaming": "TSN"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "italian-gp",
@@ -723,7 +753,8 @@
       "usa": {
         "streaming": "ESPN+"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "abu-dhabi-gp",
@@ -741,7 +772,8 @@
       "usa": {
         "streaming": "ESPN+"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "womens-t20-world-cup",
@@ -786,7 +818,8 @@
       "new-zealand": {
         "streaming": "Sky Sport NZ"
       }
-    }
+    },
+    "status": "ongoing"
   },
   {
     "id": "nba",
@@ -811,7 +844,8 @@
         "streaming": "Kayo Sports",
         "tv": "ESPN via Foxtel"
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "wnba",
@@ -836,7 +870,8 @@
         "streaming": "TSN",
         "tv": "Sportsnet+"
       }
-    }
+    },
+    "status": "ongoing"
   },
   {
     "id": "the-masters",
@@ -861,7 +896,8 @@
         "streaming": "Prime Video",
         "tv": null
       }
-    }
+    },
+    "status": "upcoming"
   },
   {
     "id": "pga-championship",
@@ -882,6 +918,7 @@
         "streaming": "Kayo Sports",
         "tv": "Fox Sports Australia"
       }
-    }
+    },
+    "status": "upcoming"
   }
 ]
