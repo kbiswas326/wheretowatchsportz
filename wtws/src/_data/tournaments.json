@@ -23,6 +23,9 @@
       "south-africa": {
         "streaming": "SuperSport",
         "tv": "SuperSport"
+      },
+      "new-zealand": {
+        "streaming": "Sky Sport NZ"
       }
     }
   },
@@ -53,6 +56,13 @@
       "south-africa": {
         "streaming": "SuperSport",
         "tv": "SuperSport"
+      },
+      "bangladesh": {
+        "streaming": "Tapmad TV",
+        "tv": "T Sports"
+      },
+      "new-zealand": {
+        "streaming": "Sky Sport NZ"
       }
     }
   },
@@ -83,6 +93,13 @@
       "south-africa": {
         "streaming": "SuperSport",
         "tv": "SuperSport"
+      },
+      "bangladesh": {
+        "streaming": "Tapmad TV",
+        "tv": "T Sports"
+      },
+      "new-zealand": {
+        "streaming": "Sky Sport NZ"
       }
     }
   },
@@ -105,6 +122,9 @@
       "australia": {
         "streaming": "Kayo Sports",
         "tv": "Fox Cricket"
+      },
+      "new-zealand": {
+        "streaming": "Sky Sport NZ"
       }
     }
   },
@@ -211,6 +231,10 @@
       "pakistan": {
         "streaming": "Tapmad TV",
         "tv": "PTV Sports"
+      },
+      "bangladesh": {
+        "streaming": "Tapmad TV",
+        "tv": "T Sports"
       }
     }
   },
@@ -248,6 +272,19 @@
       },
       "usa": {
         "streaming": "FOX Sports"
+      },
+      "canada": {
+        "streaming": "TSN",
+        "tv": "CTV"
+      },
+      "spain": {
+        "streaming": "DAZN",
+        "tv": "RTVE",
+        "free": true
+      },
+      "france": {
+        "streaming": "Canal+",
+        "tv": "TF1"
       }
     }
   },
@@ -266,15 +303,27 @@
       },
       "usa": {
         "streaming": "FOX Sports"
+      },
+      "canada": {
+        "streaming": "TSN",
+        "tv": "TVA"
+      },
+      "spain": {
+        "streaming": "DAZN",
+        "tv": "RTVE"
+      },
+      "france": {
+        "streaming": "Canal+",
+        "tv": "TF1"
       }
     }
   },
   {
     "id": "copa-america",
-    "name": "Copa Am\u00e9rica",
+    "name": "Copa América",
     "sport": "football",
     "season": "2027",
-    "description": "The Copa Am\u00e9rica is the main international football tournament for South American national teams.",
+    "description": "The Copa América is the main international football tournament for South American national teams.",
     "broadcasts": {
       "india": {
         "streaming": "SonyLIV"
@@ -284,6 +333,9 @@
       },
       "usa": {
         "streaming": "Paramount+"
+      },
+      "canada": {
+        "streaming": "TSN"
       }
     }
   },
@@ -342,6 +394,16 @@
       "australia": {
         "streaming": "Kayo Sports",
         "tv": "Fox Sports Australia"
+      },
+      "canada": {
+        "streaming": "FuboTV",
+        "tv": "TSN"
+      },
+      "spain": {
+        "streaming": "DAZN"
+      },
+      "france": {
+        "streaming": "Canal+"
       }
     }
   },
@@ -364,6 +426,15 @@
       "australia": {
         "streaming": "Kayo Sports",
         "tv": "Fox Sports Australia"
+      },
+      "canada": {
+        "streaming": "TSN"
+      },
+      "spain": {
+        "streaming": "DAZN"
+      },
+      "france": {
+        "streaming": "Canal+"
       }
     }
   },
@@ -382,6 +453,9 @@
       },
       "usa": {
         "streaming": "Paramount+"
+      },
+      "spain": {
+        "streaming": "DAZN"
       }
     }
   },
@@ -530,6 +604,17 @@
       "australia": {
         "streaming": "Kayo Sports",
         "tv": "Fox Sports Australia"
+      },
+      "canada": {
+        "streaming": "TSN",
+        "tv": "CTV"
+      },
+      "spain": {
+        "streaming": "DAZN"
+      },
+      "france": {
+        "streaming": "Canal+",
+        "tv": "C8"
       }
     }
   },
@@ -588,6 +673,16 @@
       "australia": {
         "streaming": "Kayo Sports",
         "tv": "Fox Sports Australia"
+      },
+      "canada": {
+        "streaming": "TSN"
+      },
+      "spain": {
+        "streaming": "DAZN"
+      },
+      "france": {
+        "streaming": "Canal+",
+        "tv": "C8"
       }
     }
   },
@@ -606,6 +701,9 @@
       },
       "usa": {
         "streaming": "ESPN+"
+      },
+      "canada": {
+        "streaming": "TSN"
       }
     }
   },
@@ -669,17 +767,24 @@
         "streaming": "Prime Video",
         "tv": null,
         "free": true,
-        "freeNote": "Prime Video streams every match free in Australia for this tournament \u2014 just an Amazon account, no subscription needed"
+        "freeNote": "Prime Video streams every match free in Australia for this tournament — just an Amazon account, no subscription needed"
       },
       "south-africa": {
         "streaming": "Prime Video",
         "tv": "SuperSport",
         "free": true,
-        "freeNote": "Prime Video streams every match free in South Africa for this tournament \u2014 just an Amazon account, no subscription needed"
+        "freeNote": "Prime Video streams every match free in South Africa for this tournament — just an Amazon account, no subscription needed"
       },
       "pakistan": {
         "streaming": "Tapmad TV",
         "tv": "PTV Sports"
+      },
+      "bangladesh": {
+        "streaming": "Tapmad TV",
+        "tv": "T Sports"
+      },
+      "new-zealand": {
+        "streaming": "Sky Sport NZ"
       }
     }
   },
@@ -726,6 +831,10 @@
       "australia": {
         "streaming": "Prime Video",
         "tv": null
+      },
+      "canada": {
+        "streaming": "TSN",
+        "tv": "Sportsnet+"
       }
     }
   },
